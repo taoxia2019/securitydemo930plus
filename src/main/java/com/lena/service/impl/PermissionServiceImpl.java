@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -33,6 +34,15 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
 
     @Autowired
     private RolePermissionMapper rolePermissionMapper;
+
+    @Override
+    public Results getMenu(Long userId) {
+        List<Permission> datas = permissionMapper.listByUserId(userId);
+        datas.stream().filter(p -> p.getType().equals(1)).collect(Collectors.toList());
+        JSONArray array = new JSONArray();
+        TreeUtils.setPermissionsTree(0, datas, array);
+        return Results.success(array);
+    }
     @Override
     public Results<Permission> listAllPermission() {
         List<Permission> datas=permissionMapper.selectList(null);

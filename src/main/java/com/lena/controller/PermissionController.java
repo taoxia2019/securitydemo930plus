@@ -37,6 +37,13 @@ public class PermissionController {
     @Autowired
     private RolePermissionService rolePermissionService;
 
+    @RequestMapping(value="/menu",method=RequestMethod.GET)
+    @ResponseBody
+    public Results getmenu(Long userId){
+        return permissionService.getMenu(userId);
+    }
+
+
     @RequestMapping(value = "/add",method = RequestMethod.GET)
     public String addPermission(Model model){
         model.addAttribute("permission",new Permission());
