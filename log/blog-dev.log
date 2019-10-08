@@ -1,0 +1,312 @@
+2019-10-08 14:17:50.566  INFO 25896 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 25896 (I:\BaiduYunDownload\securitydamo930-new102\target\classes started by Administrator in I:\BaiduYunDownload\securitydamo930-new102)
+2019-10-08 14:17:50.575 DEBUG 25896 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-08 14:17:50.575  INFO 25896 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-08 14:17:52.325  INFO 25896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 14:17:52.359  INFO 25896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 14:17:52.359  INFO 25896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-08 14:17:52.502  INFO 25896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 14:17:52.503  INFO 25896 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1860 ms
+2019-10-08 14:17:52.851  INFO 25896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-08 14:17:54.026 ERROR 25896 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:486)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:434)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:633)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:190)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9b8be97a.CGLIB$sqlSessionFactory$2(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9b8be97a$$FastClassBySpringCGLIB$$1fc2e075.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9b8be97a.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.lena.Securitydemo930Application.main(Securitydemo930Application.java:12)
+
+2019-10-08 14:17:54.041  WARN 25896 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionController': Unsatisfied dependency expressed through field 'permissionService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\BaiduYunDownload\securitydamo930-new102\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-10-08 14:17:54.047  INFO 25896 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-08 14:17:54.072  INFO 25896 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-08 14:17:54.083 ERROR 25896 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionController': Unsatisfied dependency expressed through field 'permissionService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\BaiduYunDownload\securitydamo930-new102\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.lena.Securitydemo930Application.main(Securitydemo930Application.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\BaiduYunDownload\securitydamo930-new102\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\BaiduYunDownload\securitydamo930-new102\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 56 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:49)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:489)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:434)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:633)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:190)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9b8be97a.CGLIB$sqlSessionFactory$2(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9b8be97a$$FastClassBySpringCGLIB$$1fc2e075.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9b8be97a.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+
+2019-10-08 14:21:31.809  INFO 25416 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 25416 (I:\BaiduYunDownload\securitydamo930-new102\target\classes started by Administrator in I:\BaiduYunDownload\securitydamo930-new102)
+2019-10-08 14:21:31.814 DEBUG 25416 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-08 14:21:31.815  INFO 25416 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-08 14:21:33.534  INFO 25416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 14:21:33.566  INFO 25416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 14:21:33.567  INFO 25416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-08 14:21:33.718  INFO 25416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 14:21:33.719  INFO 25416 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1687 ms
+2019-10-08 14:21:33.952  INFO 25416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-08 14:21:34.077  INFO 25416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-08 14:21:34.522  WARN 25416 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-08 14:21:34.646  WARN 25416 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-08 14:21:35.010  INFO 25416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 14:21:35.114  INFO 25416 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-08 14:21:35.383  INFO 25416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 14:21:35.389  INFO 25416 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.48 seconds (JVM running for 5.658)
+2019-10-08 14:21:49.714  INFO 25416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 14:21:49.714  INFO 25416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 14:21:49.725  INFO 25416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-08 14:21:50.997 DEBUG 25416 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-08 14:21:51.029 DEBUG 25416 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-08 14:21:51.061 DEBUG 25416 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-08 14:21:51.064 DEBUG 25416 --- [http-nio-8080-exec-6] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-08 14:21:51.065 DEBUG 25416 --- [http-nio-8080-exec-6] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-08 14:21:51.080 DEBUG 25416 --- [http-nio-8080-exec-6] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-08 14:22:00.973 DEBUG 25416 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-08 14:22:00.974 DEBUG 25416 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-08 14:22:00.977 DEBUG 25416 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-08 14:22:00.979 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-08 14:22:00.980 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-08 14:22:00.988 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-08 14:22:04.569 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-08 14:22:04.570 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-08 14:22:04.579 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : <==      Total: 25
+2019-10-08 14:22:16.268 DEBUG 25416 --- [http-nio-8080-exec-9] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-08 14:22:16.269 DEBUG 25416 --- [http-nio-8080-exec-9] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-08 14:22:16.279 DEBUG 25416 --- [http-nio-8080-exec-9] c.lena.dao.PermissionMapper.selectList   : <==      Total: 25
+2019-10-08 14:22:37.751 DEBUG 25416 --- [http-nio-8080-exec-3] com.lena.dao.RoleMapper.insert           : ==>  Preparing: INSERT INTO sys_role ( name, descirption, createtime, updatetime ) VALUES ( ?, ?, ?, ? ) 
+2019-10-08 14:22:37.757 DEBUG 25416 --- [http-nio-8080-exec-3] com.lena.dao.RoleMapper.insert           : ==> Parameters: test123(String), ceshi(String), 2019-10-08T14:22:37.746(LocalDateTime), 2019-10-08T14:22:37.746(LocalDateTime)
+2019-10-08 14:22:37.761 DEBUG 25416 --- [http-nio-8080-exec-3] com.lena.dao.RoleMapper.insert           : <==    Updates: 1
+2019-10-08 14:22:37.768 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.769 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 1(Integer)
+2019-10-08 14:22:37.773 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.774 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.774 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 2(Integer)
+2019-10-08 14:22:37.776 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.777 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.778 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 3(Integer)
+2019-10-08 14:22:37.781 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.781 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.782 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 4(Integer)
+2019-10-08 14:22:37.785 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.786 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.786 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 5(Integer)
+2019-10-08 14:22:37.788 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.789 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.791 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 26(Integer)
+2019-10-08 14:22:37.793 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.794 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.794 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 7(Integer)
+2019-10-08 14:22:37.796 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.797 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.798 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 8(Integer)
+2019-10-08 14:22:37.801 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.802 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.803 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 9(Integer)
+2019-10-08 14:22:37.806 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.807 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.807 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 10(Integer)
+2019-10-08 14:22:37.809 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.810 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.811 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 11(Integer)
+2019-10-08 14:22:37.813 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.813 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.814 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 24(Integer)
+2019-10-08 14:22:37.816 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.817 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.817 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 19(Integer)
+2019-10-08 14:22:37.820 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:37.820 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==>  Preparing: INSERT INTO sys_role_permission ( roleid, permissionid ) VALUES ( ?, ? ) 
+2019-10-08 14:22:37.821 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : ==> Parameters: 12(Integer), 21(Integer)
+2019-10-08 14:22:37.823 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.RolePermissionMapper.insert   : <==    Updates: 1
+2019-10-08 14:22:39.186 DEBUG 25416 --- [http-nio-8080-exec-2] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-08 14:22:39.187 DEBUG 25416 --- [http-nio-8080-exec-2] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-08 14:22:39.188 DEBUG 25416 --- [http-nio-8080-exec-2] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-08 14:22:39.189 DEBUG 25416 --- [http-nio-8080-exec-2] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-08 14:22:39.189 DEBUG 25416 --- [http-nio-8080-exec-2] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-08 14:22:39.194 DEBUG 25416 --- [http-nio-8080-exec-2] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-08 14:22:41.573 DEBUG 25416 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-08 14:22:41.573 DEBUG 25416 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-08 14:22:41.574 DEBUG 25416 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-08 14:22:41.576 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-08 14:22:41.577 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 10(Integer), 10(Integer)
+2019-10-08 14:22:41.579 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 1
+2019-10-08 14:22:43.664 DEBUG 25416 --- [http-nio-8080-exec-8] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-08 14:22:43.665 DEBUG 25416 --- [http-nio-8080-exec-8] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-08 14:22:43.667 DEBUG 25416 --- [http-nio-8080-exec-8] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-08 14:22:43.668 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-08 14:22:43.669 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-08 14:22:43.673 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-08 14:22:50.202 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-08 14:22:50.203 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-08 14:22:50.204 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-08 14:22:50.205 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-08 14:22:50.206 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-08 14:22:50.211 DEBUG 25416 --- [http-nio-8080-exec-4] c.lena.dao.PermissionMapper.selectList   : <==      Total: 25
+2019-10-08 14:22:52.107 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-08 14:22:52.107 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-08 14:22:52.113 DEBUG 25416 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : <==      Total: 25
+2019-10-08 14:23:10.627 DEBUG 25416 --- [http-nio-8080-exec-10] com.lena.dao.PermissionMapper.insert     : ==>  Preparing: INSERT INTO sys_permission ( parentid, name, css, href, type, permission, sort ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+2019-10-08 14:23:10.630 DEBUG 25416 --- [http-nio-8080-exec-10] com.lena.dao.PermissionMapper.insert     : ==> Parameters: 7(Integer), ceshi1234(String), (String), (String), 1(Integer), (String), 100(Integer)
+2019-10-08 14:23:10.635 DEBUG 25416 --- [http-nio-8080-exec-10] com.lena.dao.PermissionMapper.insert     : <==    Updates: 1
+2019-10-08 14:23:12.279 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-08 14:23:12.280 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-08 14:23:12.282 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-08 14:23:12.283 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-08 14:23:12.284 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-08 14:23:12.287 DEBUG 25416 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26

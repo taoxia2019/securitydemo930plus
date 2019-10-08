@@ -1,0 +1,1091 @@
+2019-09-29 14:20:16.266  INFO 12088 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 12088 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 14:20:16.270 DEBUG 12088 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 14:20:16.271  INFO 12088 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 14:20:18.092  INFO 12088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 14:20:18.121  INFO 12088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 14:20:18.122  INFO 12088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 14:20:18.268  INFO 12088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 14:20:18.268  INFO 12088 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1855 ms
+2019-09-29 14:20:18.673  INFO 12088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 14:20:18.776  INFO 12088 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 14:20:19.026  INFO 12088 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 426c72a6-9e7e-4901-ab95-706379d451a6
+
+2019-09-29 14:20:19.138  INFO 12088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e34384c, org.springframework.security.web.context.SecurityContextPersistenceFilter@63718b93, org.springframework.security.web.header.HeaderWriterFilter@4a3be6a5, org.springframework.security.web.csrf.CsrfFilter@38a1c423, org.springframework.security.web.authentication.logout.LogoutFilter@56f71edb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@256a1825, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6edcd0d8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3051e0b2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@287f7811, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b4786dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@518cf84a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f52eb6f, org.springframework.security.web.session.SessionManagementFilter@3721177d, org.springframework.security.web.access.ExceptionTranslationFilter@5b12012e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a84bc3f]
+2019-09-29 14:20:19.231  INFO 12088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 14:20:19.237  INFO 12088 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.142 seconds (JVM running for 7.679)
+2019-09-29 14:22:47.841  INFO 5424 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 5424 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 14:22:47.846 DEBUG 5424 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 14:22:47.846  INFO 5424 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 14:22:48.711  WARN 5424 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lena]' package. Please check your configuration.
+2019-09-29 14:22:49.408  INFO 5424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 14:22:49.437  INFO 5424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 14:22:49.437  INFO 5424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 14:22:49.576  INFO 5424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 14:22:49.577  INFO 5424 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1661 ms
+2019-09-29 14:22:49.849  INFO 5424 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 14:22:49.951  INFO 5424 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 14:22:50.169  INFO 5424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 14:22:50.171  WARN 5424 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-29 14:22:51.436 ERROR 5424 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:486)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:434)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:633)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:190)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7402bbcf.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7402bbcf$$FastClassBySpringCGLIB$$be55f606.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7402bbcf.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.lena.Securitydemo930Application.main(Securitydemo930Application.java:10)
+Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2139)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2163)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1301)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:958)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:817)
+	... 44 common frames omitted
+
+2019-09-29 14:22:51.441  WARN 5424 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+2019-09-29 14:22:51.442  INFO 5424 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-29 14:22:51.445  INFO 5424 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-29 14:22:51.462  INFO 5424 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-29 14:22:51.490 ERROR 5424 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.lena.Securitydemo930Application.main(Securitydemo930Application.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 19 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:49)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:489)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:434)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:633)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:190)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7402bbcf.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7402bbcf$$FastClassBySpringCGLIB$$be55f606.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7402bbcf.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+
+2019-09-29 14:24:05.443  INFO 21164 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 21164 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 14:24:05.457 DEBUG 21164 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 14:24:05.457  INFO 21164 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 14:24:06.392  WARN 21164 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lena]' package. Please check your configuration.
+2019-09-29 14:24:07.065  INFO 21164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 14:24:07.091  INFO 21164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 14:24:07.091  INFO 21164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 14:24:07.216  INFO 21164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 14:24:07.217  INFO 21164 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1595 ms
+2019-09-29 14:24:07.497  INFO 21164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 14:24:07.600  INFO 21164 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 14:24:07.883  INFO 21164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 14:24:08.127  INFO 21164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 14:24:08.315  INFO 21164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 14:24:08.319  INFO 21164 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.863 seconds (JVM running for 5.037)
+2019-09-29 14:24:31.790  INFO 21164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 14:24:31.791  INFO 21164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 14:24:31.804  INFO 21164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-29 14:46:57.310  INFO 9104 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 9104 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 14:46:57.317 DEBUG 9104 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 14:46:57.318  INFO 9104 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 14:46:58.295  WARN 9104 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lena]' package. Please check your configuration.
+2019-09-29 14:46:58.943  INFO 9104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 14:46:58.970  INFO 9104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 14:46:58.971  INFO 9104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 14:46:59.090  INFO 9104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 14:46:59.090  INFO 9104 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1708 ms
+2019-09-29 14:46:59.399  INFO 9104 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 14:46:59.477  INFO 9104 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 14:46:59.705  INFO 9104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 14:46:59.960  INFO 9104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 14:47:00.142  INFO 9104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 14:47:00.146  INFO 9104 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.694 seconds (JVM running for 4.672)
+2019-09-29 14:47:07.112  INFO 9104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 14:47:07.113  INFO 9104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 14:47:07.123  INFO 9104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-09-29 15:04:59.417  INFO 5044 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 5044 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 15:04:59.422 DEBUG 5044 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 15:04:59.422  INFO 5044 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 15:05:00.401  WARN 5044 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lena]' package. Please check your configuration.
+2019-09-29 15:05:01.070  INFO 5044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 15:05:01.098  INFO 5044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 15:05:01.098  INFO 5044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 15:05:01.226  INFO 5044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 15:05:01.227  INFO 5044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1740 ms
+2019-09-29 15:05:01.509  INFO 5044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 15:05:01.576  INFO 5044 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 15:05:01.796  INFO 5044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 15:05:01.914  INFO 5044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 15:05:02.186  INFO 5044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 15:05:02.189  INFO 5044 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.643 seconds (JVM running for 4.664)
+2019-09-29 15:05:06.993  INFO 5044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 15:05:06.993  INFO 5044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 15:05:07.004  INFO 5044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-29 15:05:07.706 ERROR 5044 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "user/user-list": Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 41, col 24)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 41, col 24)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-29 15:05:07.711 ERROR 5044 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 41, col 24)] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 41, col 24)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-29 15:05:31.307  INFO 20896 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 20896 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 15:05:31.312 DEBUG 20896 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 15:05:31.312  INFO 20896 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 15:05:32.251  WARN 20896 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lena]' package. Please check your configuration.
+2019-09-29 15:05:32.876  INFO 20896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 15:05:32.903  INFO 20896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 15:05:32.904  INFO 20896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 15:05:33.019  INFO 20896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 15:05:33.019  INFO 20896 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1639 ms
+2019-09-29 15:05:33.286  INFO 20896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 15:05:33.360  INFO 20896 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 15:05:33.564  INFO 20896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 15:05:33.805  INFO 20896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 15:05:33.986  INFO 20896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 15:05:33.990  INFO 20896 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.594 seconds (JVM running for 4.629)
+2019-09-29 15:05:43.798  INFO 20896 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 15:05:43.799  INFO 20896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 15:05:43.808  INFO 20896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-09-29 16:12:35.370  INFO 20760 --- [main] com.lena.generator.MysqlGenerator        : Starting MysqlGenerator on PC-20190301SZZL with PID 20760 (started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:12:35.371 DEBUG 20760 --- [main] com.lena.generator.MysqlGenerator        : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:12:35.372  INFO 20760 --- [main] com.lena.generator.MysqlGenerator        : The following profiles are active: dev
+2019-09-29 16:12:36.710  WARN 20760 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lena]' package. Please check your configuration.
+2019-09-29 16:12:38.484  INFO 20760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:12:38.693  INFO 20760 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:12:39.713  INFO 20760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:12:40.103  INFO 20760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:12:40.550  INFO 20760 --- [main] com.lena.generator.MysqlGenerator        : Started MysqlGenerator in 6.762 seconds (JVM running for 9.012)
+2019-09-29 16:12:41.200  INFO 20760 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-29 16:12:41.235  INFO 20760 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-29 16:12:41.238  INFO 20760 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:14:02.381  INFO 23260 --- [main] com.lena.generator.MysqlGenerator        : Starting MysqlGenerator on PC-20190301SZZL with PID 23260 (started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:14:02.383 DEBUG 23260 --- [main] com.lena.generator.MysqlGenerator        : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:14:02.383  INFO 23260 --- [main] com.lena.generator.MysqlGenerator        : The following profiles are active: dev
+2019-09-29 16:14:03.687  WARN 23260 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lena]' package. Please check your configuration.
+2019-09-29 16:14:05.526  INFO 23260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:14:05.793  INFO 23260 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:14:07.098  INFO 23260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:14:07.434  INFO 23260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:14:07.883  INFO 23260 --- [main] com.lena.generator.MysqlGenerator        : Started MysqlGenerator in 7.145 seconds (JVM running for 8.793)
+2019-09-29 16:14:08.910  INFO 23260 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-29 16:14:08.931  INFO 23260 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-29 16:14:08.931  INFO 23260 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:19:02.590  INFO 21428 --- [main] c.lena.Securitydemo930ApplicationTests   : Starting Securitydemo930ApplicationTests on PC-20190301SZZL with PID 21428 (started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:19:02.592 DEBUG 21428 --- [main] c.lena.Securitydemo930ApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:19:02.593  INFO 21428 --- [main] c.lena.Securitydemo930ApplicationTests   : The following profiles are active: dev
+2019-09-29 16:19:04.948  INFO 21428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:19:05.223  INFO 21428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:19:06.755  INFO 21428 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:19:06.987  INFO 21428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:19:07.816  INFO 21428 --- [main] c.lena.Securitydemo930ApplicationTests   : Started Securitydemo930ApplicationTests in 6.827 seconds (JVM running for 8.526)
+2019-09-29 16:19:08.237 DEBUG 21428 --- [main] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:19:08.290 DEBUG 21428 --- [main] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:19:08.353 DEBUG 21428 --- [main] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:19:08.375  INFO 21428 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:19:08.378  INFO 21428 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-29 16:19:08.398  INFO 21428 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-29 16:24:00.066  INFO 25464 --- [main] c.lena.Securitydemo930ApplicationTests   : Starting Securitydemo930ApplicationTests on PC-20190301SZZL with PID 25464 (started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:24:00.068 DEBUG 25464 --- [main] c.lena.Securitydemo930ApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:24:00.068  INFO 25464 --- [main] c.lena.Securitydemo930ApplicationTests   : The following profiles are active: dev
+2019-09-29 16:24:02.831  INFO 25464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:24:03.162  INFO 25464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:24:04.696  INFO 25464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:24:04.914  INFO 25464 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:24:05.887  INFO 25464 --- [main] c.lena.Securitydemo930ApplicationTests   : Started Securitydemo930ApplicationTests in 7.363 seconds (JVM running for 9.129)
+2019-09-29 16:24:06.387 DEBUG 25464 --- [main] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:24:06.440 DEBUG 25464 --- [main] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:24:06.498 DEBUG 25464 --- [main] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:24:06.543 DEBUG 25464 --- [main] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:24:06.544 DEBUG 25464 --- [main] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:24:06.547 DEBUG 25464 --- [main] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:24:06.566  INFO 25464 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:24:06.570  INFO 25464 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-29 16:24:06.609  INFO 25464 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-29 16:31:24.124  INFO 25524 --- [main] c.lena.Securitydemo930ApplicationTests   : Starting Securitydemo930ApplicationTests on PC-20190301SZZL with PID 25524 (started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:31:24.126 DEBUG 25524 --- [main] c.lena.Securitydemo930ApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:31:24.127  INFO 25524 --- [main] c.lena.Securitydemo930ApplicationTests   : The following profiles are active: dev
+2019-09-29 16:32:04.541  INFO 10736 --- [main] c.lena.Securitydemo930ApplicationTests   : Starting Securitydemo930ApplicationTests on PC-20190301SZZL with PID 10736 (started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:32:04.543 DEBUG 10736 --- [main] c.lena.Securitydemo930ApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:32:04.543  INFO 10736 --- [main] c.lena.Securitydemo930ApplicationTests   : The following profiles are active: dev
+2019-09-29 16:32:06.966  INFO 10736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:32:07.273  INFO 10736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:32:08.840  INFO 10736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:32:09.061  INFO 10736 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:32:09.837  INFO 10736 --- [main] c.lena.Securitydemo930ApplicationTests   : Started Securitydemo930ApplicationTests in 7.083 seconds (JVM running for 8.785)
+2019-09-29 16:32:10.344 DEBUG 10736 --- [main] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:32:10.405 DEBUG 10736 --- [main] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:32:10.469 DEBUG 10736 --- [main] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:32:10.516 DEBUG 10736 --- [main] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:32:10.517 DEBUG 10736 --- [main] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:32:10.519 DEBUG 10736 --- [main] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:32:10.537  INFO 10736 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:32:10.540  INFO 10736 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-29 16:32:10.574  INFO 10736 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-29 16:32:28.817  INFO 6684 --- [main] c.lena.Securitydemo930ApplicationTests   : Starting Securitydemo930ApplicationTests on PC-20190301SZZL with PID 6684 (started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:32:28.819 DEBUG 6684 --- [main] c.lena.Securitydemo930ApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:32:28.820  INFO 6684 --- [main] c.lena.Securitydemo930ApplicationTests   : The following profiles are active: dev
+2019-09-29 16:32:31.269  INFO 6684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:32:31.524  INFO 6684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:32:32.967  INFO 6684 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:32:33.157  INFO 6684 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:32:33.944  INFO 6684 --- [main] c.lena.Securitydemo930ApplicationTests   : Started Securitydemo930ApplicationTests in 6.784 seconds (JVM running for 8.462)
+2019-09-29 16:32:34.364 DEBUG 6684 --- [main] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:32:34.413 DEBUG 6684 --- [main] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:32:34.460 DEBUG 6684 --- [main] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:32:34.506 DEBUG 6684 --- [main] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:32:34.506 DEBUG 6684 --- [main] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:32:34.509 DEBUG 6684 --- [main] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:32:34.526  INFO 6684 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:32:34.529  INFO 6684 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-29 16:32:34.550  INFO 6684 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-29 16:32:59.027  INFO 12812 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 12812 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:32:59.031 DEBUG 12812 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:32:59.031  INFO 12812 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:33:00.563  INFO 12812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:33:00.589  INFO 12812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:33:00.589  INFO 12812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:33:00.706  INFO 12812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:33:00.706  INFO 12812 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1505 ms
+2019-09-29 16:33:00.917  INFO 12812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:33:01.061  INFO 12812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:33:01.599  INFO 12812 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:33:01.669  INFO 12812 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:33:01.907  INFO 12812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:33:01.911  INFO 12812 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.901 seconds (JVM running for 5.003)
+2019-09-29 16:33:10.489  INFO 12812 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:33:10.490  INFO 12812 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:33:10.497  INFO 12812 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-09-29 16:34:22.328  INFO 23772 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 23772 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:34:22.332 DEBUG 23772 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:34:22.332  INFO 23772 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:34:23.618  INFO 23772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:34:23.645  INFO 23772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:34:23.646  INFO 23772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:34:23.763  INFO 23772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:34:23.763  INFO 23772 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1350 ms
+2019-09-29 16:34:24.017  INFO 23772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:34:24.139  INFO 23772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:34:24.694  INFO 23772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:34:24.763  INFO 23772 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:34:24.993  INFO 23772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:34:24.998  INFO 23772 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.902 seconds (JVM running for 5.11)
+2019-09-29 16:34:31.306  INFO 23772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:34:31.306  INFO 23772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:34:31.314  INFO 23772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-09-29 16:36:52.824  INFO 14688 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 14688 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:36:52.828 DEBUG 14688 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:36:52.829  INFO 14688 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:36:54.405  INFO 14688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:36:54.432  INFO 14688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:36:54.432  INFO 14688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:36:54.548  INFO 14688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:36:54.548  INFO 14688 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1547 ms
+2019-09-29 16:36:54.742  INFO 14688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:36:54.882  INFO 14688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:36:55.384  INFO 14688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:36:55.467  INFO 14688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:36:55.712  INFO 14688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:36:55.716  INFO 14688 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.958 seconds (JVM running for 5.083)
+2019-09-29 16:37:07.730  INFO 14688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:37:07.730  INFO 14688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:37:07.750  INFO 14688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2019-09-29 16:38:24.287 DEBUG 14688 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:38:24.314 DEBUG 14688 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:38:24.341 DEBUG 14688 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:38:24.353 ERROR 14688 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "users/list": Error resolving template [users/list], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [users/list], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-29 16:38:24.358 ERROR 14688 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [users/list], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [users/list], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-29 16:39:17.865  INFO 18056 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 18056 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:39:17.869 DEBUG 18056 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:39:17.870  INFO 18056 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:39:19.557  INFO 18056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:39:19.599  INFO 18056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:39:19.599  INFO 18056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:39:19.730  INFO 18056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:39:19.730  INFO 18056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1622 ms
+2019-09-29 16:39:20.006  INFO 18056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:39:20.142  INFO 18056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:39:20.681  INFO 18056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:39:20.752  INFO 18056 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:39:21.026  INFO 18056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:39:21.030  INFO 18056 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.105 seconds (JVM running for 5.064)
+2019-09-29 16:39:28.923  INFO 18056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:39:28.924  INFO 18056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:39:28.933  INFO 18056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-09-29 16:39:29.026 DEBUG 18056 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:39:29.053 DEBUG 18056 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:39:29.079 DEBUG 18056 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:46:35.811  INFO 24072 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 24072 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:46:35.827 DEBUG 24072 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:46:35.827  INFO 24072 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:46:37.554  INFO 24072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:46:37.582  INFO 24072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:46:37.582  INFO 24072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:46:37.699  INFO 24072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:46:37.699  INFO 24072 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1712 ms
+2019-09-29 16:46:37.903  INFO 24072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:46:38.044  INFO 24072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:46:38.557  INFO 24072 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:46:38.632  INFO 24072 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:46:38.870  INFO 24072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:46:38.874  INFO 24072 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.956 seconds (JVM running for 4.954)
+2019-09-29 16:46:48.811  INFO 24072 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:46:48.812  INFO 24072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:46:48.819  INFO 24072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-09-29 16:46:49.880 DEBUG 24072 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:46:49.911 DEBUG 24072 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:46:49.947 DEBUG 24072 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:47:26.843 DEBUG 24072 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:47:26.844 DEBUG 24072 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:47:26.845 DEBUG 24072 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:48:56.985 DEBUG 24072 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:48:56.985 DEBUG 24072 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:48:56.988 DEBUG 24072 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:49:05.282 DEBUG 24072 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:49:05.283 DEBUG 24072 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:49:05.285 DEBUG 24072 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:49:56.038  INFO 15384 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 15384 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:49:56.058 DEBUG 15384 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:49:56.058  INFO 15384 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:49:57.541  INFO 15384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:49:57.568  INFO 15384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:49:57.568  INFO 15384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:49:57.686  INFO 15384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:49:57.686  INFO 15384 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1540 ms
+2019-09-29 16:49:57.877  INFO 15384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:49:58.015  INFO 15384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:49:58.528  INFO 15384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:49:58.599  INFO 15384 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:49:58.829  INFO 15384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:49:58.832  INFO 15384 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.934 seconds (JVM running for 4.946)
+2019-09-29 16:50:06.894  INFO 15384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:50:06.894  INFO 15384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:50:06.902  INFO 15384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-09-29 16:50:07.910 DEBUG 15384 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:50:07.941 DEBUG 15384 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:50:07.971 DEBUG 15384 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:52:07.305  INFO 22940 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 22940 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:52:07.314 DEBUG 22940 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:52:07.314  INFO 22940 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:52:10.149  INFO 22940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:52:10.199  INFO 22940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:52:10.200  INFO 22940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:52:10.469  INFO 22940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:52:10.470  INFO 22940 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2908 ms
+2019-09-29 16:52:10.920  INFO 22940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:52:11.170  INFO 22940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:52:12.116  INFO 22940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:52:12.242  INFO 22940 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:52:12.634  INFO 22940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:52:12.639  INFO 22940 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 6.696 seconds (JVM running for 8.536)
+2019-09-29 16:52:19.155  INFO 22940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:52:19.155  INFO 22940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:52:19.166  INFO 22940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-29 16:52:20.333 DEBUG 22940 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:52:20.372 DEBUG 22940 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:52:20.408 DEBUG 22940 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 16:58:05.513  INFO 20796 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 20796 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:58:05.517 DEBUG 20796 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:58:05.518  INFO 20796 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:58:07.072  INFO 20796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:58:07.100  INFO 20796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:58:07.100  INFO 20796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:58:07.218  INFO 20796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:58:07.219  INFO 20796 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1540 ms
+2019-09-29 16:58:07.438  INFO 20796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:58:07.581  INFO 20796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:58:08.095  INFO 20796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:58:08.167  INFO 20796 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:58:08.407  INFO 20796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:58:08.411  INFO 20796 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.861 seconds (JVM running for 4.88)
+2019-09-29 16:58:14.137  INFO 20796 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:58:14.138  INFO 20796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:58:14.152  INFO 20796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-09-29 16:58:14.836 ERROR 20796 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "user/user-list": Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 69, col 24)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 69, col 24)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-29 16:58:14.842 ERROR 20796 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 69, col 24)] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: " //表头
+                  {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                  ,{field: 'username', title: '用户名', width:80}
+                  ,{field: 'sex', title: '性别', width:80, sort: true}
+                  ,{field: 'city', title: '城市', width:80}
+                  ,{field: 'sign', title: '签名', width: 177}
+                  ,{field: 'experience', title: '积分', width: 80, sort: true}
+                  ,{field: 'score', title: '评分', width: 80, sort: true}
+                  ,{field: 'classify', title: '职业', width: 80}
+                  ,{field: 'wealth', title: '财富', width: 135, sort: true}
+              " (template: "user/user-list" - line 69, col 24)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-29 16:58:40.789  INFO 23844 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 23844 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:58:40.794 DEBUG 23844 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:58:40.794  INFO 23844 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:58:42.436  INFO 23844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:58:42.466  INFO 23844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:58:42.466  INFO 23844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:58:42.590  INFO 23844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:58:42.590  INFO 23844 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1717 ms
+2019-09-29 16:58:42.798  INFO 23844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:58:42.946  INFO 23844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:58:43.475  INFO 23844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:58:43.551  INFO 23844 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:58:43.811  INFO 23844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:58:43.814  INFO 23844 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.985 seconds (JVM running for 4.935)
+2019-09-29 16:58:48.104  INFO 23844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:58:48.104  INFO 23844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:58:48.115  INFO 23844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-09-29 16:59:31.309  INFO 16692 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 16692 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 16:59:31.313 DEBUG 16692 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 16:59:31.391  INFO 16692 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 16:59:32.809  INFO 16692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 16:59:32.836  INFO 16692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 16:59:32.836  INFO 16692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 16:59:32.952  INFO 16692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 16:59:32.953  INFO 16692 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1491 ms
+2019-09-29 16:59:33.161  INFO 16692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 16:59:33.302  INFO 16692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 16:59:33.803  INFO 16692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 16:59:33.871  INFO 16692 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 16:59:34.108  INFO 16692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 16:59:34.111  INFO 16692 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.851 seconds (JVM running for 4.913)
+2019-09-29 16:59:39.382  INFO 16692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 16:59:39.382  INFO 16692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 16:59:39.396  INFO 16692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-29 16:59:40.377 DEBUG 16692 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 16:59:40.406 DEBUG 16692 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 16:59:40.438 DEBUG 16692 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 17:00:20.253  INFO 12100 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 12100 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 17:00:20.397 DEBUG 12100 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 17:00:20.397  INFO 12100 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 17:00:21.848  INFO 12100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 17:00:21.874  INFO 12100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 17:00:21.874  INFO 12100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 17:00:21.988  INFO 12100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 17:00:21.989  INFO 12100 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1513 ms
+2019-09-29 17:00:22.202  INFO 12100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 17:00:22.336  INFO 12100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 17:00:22.865  INFO 12100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 17:00:22.935  INFO 12100 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 17:00:23.164  INFO 12100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 17:00:23.168  INFO 12100 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.882 seconds (JVM running for 4.865)
+2019-09-29 17:00:49.381  INFO 12100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 17:00:49.382  INFO 12100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 17:00:49.397  INFO 12100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-09-29 17:00:50.435 DEBUG 12100 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 17:00:50.464 DEBUG 12100 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 17:00:50.496 DEBUG 12100 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 17:10:59.553  INFO 16112 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 16112 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 17:10:59.558 DEBUG 16112 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 17:10:59.558  INFO 16112 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 17:11:01.392  INFO 16112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 17:11:01.422  INFO 16112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 17:11:01.422  INFO 16112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 17:11:01.543  INFO 16112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 17:11:01.544  INFO 16112 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1796 ms
+2019-09-29 17:11:01.818  INFO 16112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 17:11:01.967  INFO 16112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 17:11:02.526  INFO 16112 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 17:11:02.599  INFO 16112 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 17:11:02.852  INFO 16112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 17:11:02.855  INFO 16112 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.167 seconds (JVM running for 5.249)
+2019-09-29 17:11:13.238  INFO 16112 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 17:11:13.238  INFO 16112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 17:11:13.247  INFO 16112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-09-29 17:11:14.315 DEBUG 16112 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 17:11:14.343 DEBUG 16112 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 17:11:14.374 DEBUG 16112 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 17:11:59.954  INFO 14944 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 14944 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 17:11:59.958 DEBUG 14944 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 17:11:59.959  INFO 14944 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 17:12:01.589  INFO 14944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 17:12:01.617  INFO 14944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 17:12:01.618  INFO 14944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 17:12:01.735  INFO 14944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 17:12:01.735  INFO 14944 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1593 ms
+2019-09-29 17:12:01.946  INFO 14944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 17:12:02.086  INFO 14944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 17:12:02.619  INFO 14944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 17:12:02.688  INFO 14944 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 17:12:02.927  INFO 14944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 17:12:02.931  INFO 14944 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.0 seconds (JVM running for 5.014)
+2019-09-29 17:12:08.814  INFO 14944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 17:12:08.814  INFO 14944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 17:12:08.826  INFO 14944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-09-29 17:12:09.909 DEBUG 14944 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 17:12:09.941 DEBUG 14944 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 17:12:09.976 DEBUG 14944 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 17:12:43.089  INFO 24592 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 24592 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 17:12:43.094 DEBUG 24592 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 17:12:43.095  INFO 24592 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 17:12:44.819  INFO 24592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 17:12:44.848  INFO 24592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 17:12:44.848  INFO 24592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 17:12:44.985  INFO 24592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 17:12:44.987  INFO 24592 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1815 ms
+2019-09-29 17:12:45.196  INFO 24592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 17:12:45.320  INFO 24592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 17:12:45.839  INFO 24592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 17:12:45.910  INFO 24592 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 17:12:46.188  INFO 24592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 17:12:46.191  INFO 24592 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.11 seconds (JVM running for 5.095)
+2019-09-29 17:12:52.841  INFO 24592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 17:12:52.842  INFO 24592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 17:12:52.851  INFO 24592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-09-29 17:12:53.907 DEBUG 24592 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 17:12:53.937 DEBUG 24592 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 17:12:53.971 DEBUG 24592 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 17:13:21.696  INFO 8408 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 8408 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 17:13:21.701 DEBUG 8408 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 17:13:21.701  INFO 8408 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 17:13:23.336  INFO 8408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 17:13:23.364  INFO 8408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 17:13:23.365  INFO 8408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 17:13:23.483  INFO 8408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 17:13:23.483  INFO 8408 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1542 ms
+2019-09-29 17:13:23.684  INFO 8408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 17:13:23.817  INFO 8408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 17:13:24.368  INFO 8408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 17:13:24.451  INFO 8408 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 17:13:24.692  INFO 8408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 17:13:24.695  INFO 8408 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 3.989 seconds (JVM running for 5.073)
+2019-09-29 17:13:29.792  INFO 8408 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 17:13:29.793  INFO 8408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 17:13:29.803  INFO 8408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-09-29 17:13:30.862 DEBUG 8408 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 17:13:30.892 DEBUG 8408 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 17:13:30.929 DEBUG 8408 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-09-29 17:14:34.428  INFO 23560 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 23560 (I:\idea_workspace\securitydemo930\target\classes started by Administrator in I:\idea_workspace\securitydemo930)
+2019-09-29 17:14:34.432 DEBUG 23560 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-09-29 17:14:34.433  INFO 23560 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-09-29 17:14:36.136  INFO 23560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-09-29 17:14:36.172  INFO 23560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-29 17:14:36.172  INFO 23560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-29 17:14:36.309  INFO 23560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-29 17:14:36.309  INFO 23560 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1590 ms
+2019-09-29 17:14:36.520  INFO 23560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-29 17:14:36.658  INFO 23560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-29 17:14:37.170  INFO 23560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-29 17:14:37.240  INFO 23560 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-29 17:14:37.525  INFO 23560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-09-29 17:14:37.528  INFO 23560 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.06 seconds (JVM running for 5.063)
+2019-09-29 17:14:41.874  INFO 23560 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-29 17:14:41.874  INFO 23560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-29 17:14:41.885  INFO 23560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-09-29 17:14:42.917 DEBUG 23560 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng FROM sys_users 
+2019-09-29 17:14:42.944 DEBUG 23560 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==> Parameters: 
+2019-09-29 17:14:42.976 DEBUG 23560 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
