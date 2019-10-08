@@ -36,9 +36,10 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     private RolePermissionMapper rolePermissionMapper;
 
     @Override
-    public Results getMenu(Long userId) {
+    public Results getMenu(Integer userId) {
+
         List<Permission> datas = permissionMapper.listByUserId(userId);
-        datas.stream().filter(p -> p.getType().equals(1)).collect(Collectors.toList());
+        datas=datas.stream().filter(p -> p.getType().equals(1)).collect(Collectors.toList());
         JSONArray array = new JSONArray();
         TreeUtils.setPermissionsTree(0, datas, array);
         return Results.success(array);

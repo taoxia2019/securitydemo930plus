@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>后台登录页面</title>
-    <header th:replace="header::html"></header>
+
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="./css/font.css" th:href="@{/css/font.css}">
+    <link rel="stylesheet" href="./css/xadmin.css" th:href="@{/css/xadmin.css}">
+    <!-- <link rel="stylesheet" href="./css/theme5.css"> -->
+    <script src="./lib/layui/layui.js" charset="utf-8" th:src="@{/lib/layui/layui.all.js}"></script>
+    <script type="text/javascript" src="./js/xadmin.js" th:src="@{/js/xadmin.js}"></script>
+
+
+
+
+
 </head>
 <body class="index">
 <!-- 顶部开始 -->
@@ -341,9 +355,10 @@
 <div class="page-content-bg"></div>
 
 
-</body>
-<script>
-    $(document).ready(function () {
+
+<script type="text/javascript">
+    $().ready(function () {
+
 
         function Menu(eleId, userId) {
             this.eleId = eleId || "nav";
@@ -462,12 +477,12 @@
         }
         //var userId = localStorage.userId;
         //var menu = new Menu("", userId);
-        var menu = new Menu("", 1);
+        var menu = new Menu("nav", 1);
         menu.init();
 
 
     });
 </script>
-
+</body>
 
 </html>

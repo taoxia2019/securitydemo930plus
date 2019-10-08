@@ -27,5 +27,5 @@ public interface PermissionService extends IService<Permission> {
     Results<Permission> delectPermission(Integer id);
 
 
-    Results getMenu(Long userId);
+    Results getMenu(Integer userId);
 }

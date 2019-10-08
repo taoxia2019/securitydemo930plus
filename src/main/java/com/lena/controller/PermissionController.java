@@ -39,7 +39,7 @@ public class PermissionController {
 
     @RequestMapping(value="/menu",method=RequestMethod.GET)
     @ResponseBody
-    public Results getmenu(Long userId){
+    public Results getmenu(Integer userId){
         return permissionService.getMenu(userId);
     }
 

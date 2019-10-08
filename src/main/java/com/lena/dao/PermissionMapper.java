@@ -25,7 +25,7 @@ public interface PermissionMapper extends BaseMapper<Permission> {
             "inner join sys_role_permission srp on srp.roleid=sru.roleid "+
             "left join sys_permission sp on srp.permissionid = sp.id "+
             "where sru.userid=#{userid}")
-    List<Permission> listByUserId(@Param("userid") Long userId);
+    List<Permission> listByUserId(@Param("userid") Integer userId);
 
 
 }
