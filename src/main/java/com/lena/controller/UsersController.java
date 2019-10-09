@@ -11,6 +11,7 @@ import com.lena.service.UsersService;
 import com.lena.utils.MD5;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.WebDataBinder;
@@ -70,7 +71,8 @@ public class UsersController {
         }
 
         usersDTO.setStatus(1);
-        usersDTO.setPassword(MD5.getMD5(usersDTO.getPassword()));
+        usersDTO.setPassword(new BCryptPasswordEncoder().encode(usersDTO.getPassword()));
+        //usersDTO.setPassword(MD5.getMD5(usersDTO.getPassword()));
 
         return usersService.saveUsers(usersDTO,roleid);
     }

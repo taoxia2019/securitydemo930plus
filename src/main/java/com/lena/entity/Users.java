@@ -47,8 +47,15 @@ private static final long serialVersionUID=1L;
 
     private LocalDateTime updatetime;
 
+    //@Jsonformat(pattern="yyyy-MM-dd")
     private Date birthday;
 
     private Integer sex;
+
+    public interface Status{
+        int DISABLED=0;
+        int VALID=1;
+        int LOCKED=2;
+    }
 
 }
