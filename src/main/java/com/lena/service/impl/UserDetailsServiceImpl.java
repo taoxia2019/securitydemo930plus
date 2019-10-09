@@ -14,6 +14,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -24,6 +25,7 @@ import java.util.List;
  * @Date 2019/10/9 16:32
  * @Version 1.0
  */
+@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private UsersService usersService;

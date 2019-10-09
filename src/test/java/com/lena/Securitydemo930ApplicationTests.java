@@ -15,6 +15,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
@@ -52,12 +53,7 @@ public class Securitydemo930ApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		Integer i=1;
-		List<Permission> datas = permissionMapper.listByUserId(i);
-		datas.stream().filter(p -> p.getType().equals(1)).collect(Collectors.toList());
-		JSONArray array = new JSONArray();
-		TreeUtils.setPermissionsTree(0, datas, array);
-		System.out.println(array);
+		System.out.println(new BCryptPasswordEncoder().encode("123456"));
 
 
 
