@@ -5,6 +5,63 @@
     <title>Title</title>
 </head>
 <body>
+<div>
+    <li>
+        <a> <i class="iconfont">&#xe6a7;</i> <cite>用户管理</cite> </a>
+        <ul class="sub-menu">
+            <li><a onclick="xadmin.add_tab('用户查询','/api/getPage?pageName=user/user-list')"> <i
+                    class="iconfont">&#xe6a7;</i>
+                <cite>用户查询</cite> </a></li>
+            <li><a onclick="xadmin.add_tab('修改密码','/api/getPage?pageName')"> <i class="iconfont">&#xe6a7;</i>
+                <cite>修改密码</cite> </a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <i class="iconfont left-nav-li" lay-tips="订单管理">&#xe723;</i>
+            <cite>订单管理</cite>
+            <i class="iconfont nav_right">&#xe697;</i></a>
+        <ul class="sub-menu">
+            <li>
+                <a onclick="xadmin.add_tab('订单列表','order-list.html')">
+                    <i class="iconfont">&#xe6a7;</i>
+                    <cite>订单列表</cite></a>
+            </li>
+            <li>
+                <a onclick="xadmin.add_tab('订单列表1','order-list1.html')">
+                    <i class="iconfont">&#xe6a7;</i>
+                    <cite>订单列表1</cite></a>
+            </li>
+        </ul>
+    </li>
+    <li><a> <i class="iconfont">&#xe6a7;</i> <cite>系统设置</cite> </a>
+        <ul class="sub-menu">
+            <li><a onclick="xadmin.add_tab('菜单','/api/getPage?pageName=permission/permission-list')"> <i
+                    class="iconfont">&#xe6a7;</i>
+                <cite>菜单</cite> </a></li>
+            <li><a onclick="xadmin.add_tab('角色','/api/getPage?pageName=role/role-list')"> <i
+                    class="iconfont">&#xe6a7;</i>
+                <cite>角色</cite> </a></li>
+        </ul>
+    </li>
+    <li><a onclick="xadmin.add_tab('文件管理','/api/getPage?pageName')"> <i class="iconfont">&#xe6a7;</i> <cite>文件管理</cite>
+    </a>
+    </li>
+    <li><a onclick="xadmin.add_tab('数据源管理','druid/dindex.html')"> <i class="iconfont">&#xe6a7;</i> <cite>数据源管理</cite>
+    </a>
+    </li>
+    <li><a onclick="xadmin.add_tab('接口swagger','swagger-ui.html')"> <i class="iconfont">&#xe6a7;</i>
+        <cite>接口swagger</cite>
+    </a></li>
+    <li><a onclick="xadmin.add_tab('代码生成','/api/getPage?pageName')"> <i class="iconfont">&#xe6a7;</i> <cite>代码生成</cite>
+    </a>
+    </li>
+    <li><a onclick="xadmin.add_tab('日志查询','/api/getPage?pageName')"> <i class="iconfont">&#xe6a7;</i> <cite>日志查询</cite>
+    </a>
+    </li>
+</div>
+
+
 <input type="radio" name="roleid" value="1" title="ADMIN">
 <input type="radio" th:value="${users.sex}" name="sex" value="1" title="男" checked="">
 <div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i>
