@@ -7,6 +7,7 @@ import com.lena.dao.*;
 import com.lena.dto.RoleDTO;
 import com.lena.entity.Permission;
 import com.lena.entity.RolePermission;
+import com.lena.entity.Users;
 import com.lena.service.PermissionService;
 import com.lena.service.RoleService;
 import com.lena.service.UserRoleService;
@@ -53,8 +54,15 @@ public class Securitydemo930ApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		System.out.println(new BCryptPasswordEncoder().encode("123456"));
 
+
+		Users admin = usersMapper.getUser("admin");
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		// 加密
+		String encodedPassword = passwordEncoder.encode(admin.getPassword().trim());
+		admin.setPassword(encodedPassword);
+
+		usersMapper.updateById(admin);
 
 
 	}

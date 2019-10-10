@@ -1,5 +1,6 @@
 package com.lena.security;
 
+import com.lena.security.authentication.MyAuthenctiationFailureHandler;
 import com.lena.security.authentication.MyAuthenticationSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -34,6 +35,9 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
 
+    @Autowired
+    private MyAuthenctiationFailureHandler myAuthenctiationFailureHandler;
+
     @Bean
     @Override
     protected AuthenticationManager authenticationManager() throws Exception {
@@ -58,11 +62,7 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/static/**",
                         "/login",
-                        "/css/**",
-                        "/fonts/**",
-                        "/images/**",
-                        "/js/**",
-                        "/lib/**",
+                        "/xadmin/**",
                         "treetable-lay/**",
                         "dtree/**")
                 .permitAll()
@@ -72,7 +72,8 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
         http.formLogin()
                 .loginPage("/login")
                 .loginProcessingUrl("/login")
-                .successHandler(myAuthenticationSuccessHandler);
+                .successHandler(myAuthenticationSuccessHandler)
+                .failureHandler(myAuthenctiationFailureHandler);
     }
 
     @Override
