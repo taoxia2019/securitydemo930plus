@@ -41,7 +41,7 @@
                     success:function (datas) {
                         if(datas.authenticated==true){
                             localStorage.setItem("userId",datas.principal.id);
-                            localStorage.setItem("username",datas.principal.useranme);
+                            localStorage.setItem("username",datas.principal.username);
                             var authorities=datas.authorities;
                             var permission=[];
                             for(var i in authorities){

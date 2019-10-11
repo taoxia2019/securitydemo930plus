@@ -5528,3 +5528,376 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], te
 2019-10-11 10:16:11.091 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
 2019-10-11 10:16:11.091 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
 2019-10-11 10:16:11.099 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:41:46.559  INFO 38404 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 38404 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 13:41:46.564 DEBUG 38404 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 13:41:46.565  INFO 38404 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 13:41:49.546  INFO 38404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 13:41:49.594  INFO 38404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 13:41:49.595  INFO 38404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 13:41:49.839  INFO 38404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 13:41:49.839  INFO 38404 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3127 ms
+2019-10-11 13:41:50.391  INFO 38404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 13:41:50.623  INFO 38404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 13:41:51.223  WARN 38404 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 13:41:51.425  WARN 38404 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 13:41:52.336  INFO 38404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 13:41:52.336  INFO 38404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 13:41:52.337  INFO 38404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 13:41:52.338  INFO 38404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 13:41:52.434  INFO 38404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dc4a691, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fe82967, org.springframework.security.web.header.HeaderWriterFilter@7baf1f5a, org.springframework.security.web.authentication.logout.LogoutFilter@5fcfde70, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53f4c1e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65e21ce3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b65d9f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@784abd3e, org.springframework.security.web.session.SessionManagementFilter@611a990b, org.springframework.security.web.access.ExceptionTranslationFilter@6e0c6a7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@588f63c]
+2019-10-11 13:41:52.742  INFO 38404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 13:41:52.997  INFO 38404 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 13:41:53.519  INFO 38404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 13:41:53.524  INFO 38404 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 9.394 seconds (JVM running for 11.217)
+2019-10-11 13:43:41.456  INFO 38404 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 13:43:41.456  INFO 38404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 13:43:41.470  INFO 38404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-11 13:43:51.940 DEBUG 38404 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 13:43:51.965 DEBUG 38404 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 13:43:52.003 DEBUG 38404 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 13:43:52.016 DEBUG 38404 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 13:43:52.017 DEBUG 38404 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 13:43:52.026 DEBUG 38404 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 13:43:52.159  INFO 38404 --- [http-nio-8080-exec-6] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 13:43:53.607 DEBUG 38404 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:43:53.608 DEBUG 38404 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:43:53.611 DEBUG 38404 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:43:53.613 DEBUG 38404 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:43:53.614 DEBUG 38404 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:43:53.618 DEBUG 38404 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 13:43:53.618 DEBUG 38404 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 13:43:53.621 DEBUG 38404 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 13:43:53.622 DEBUG 38404 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 13:43:53.623 DEBUG 38404 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 13:43:53.625 DEBUG 38404 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:43:53.632 DEBUG 38404 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 13:43:53.645 DEBUG 38404 --- [http-nio-8080-exec-1] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 13:43:53.646 DEBUG 38404 --- [http-nio-8080-exec-1] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 13:43:53.648 DEBUG 38404 --- [http-nio-8080-exec-1] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 13:43:53.649 DEBUG 38404 --- [http-nio-8080-exec-1] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 13:43:53.650 DEBUG 38404 --- [http-nio-8080-exec-1] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:43:53.655 DEBUG 38404 --- [http-nio-8080-exec-1] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 13:43:53.698 DEBUG 38404 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:43:53.699 DEBUG 38404 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:43:53.700 DEBUG 38404 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:43:53.701 DEBUG 38404 --- [http-nio-8080-exec-8] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:43:53.702 DEBUG 38404 --- [http-nio-8080-exec-8] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:43:53.707 DEBUG 38404 --- [http-nio-8080-exec-8] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:44:37.651  INFO 26180 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 26180 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 13:44:37.655 DEBUG 26180 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 13:44:37.655  INFO 26180 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 13:44:39.966  INFO 26180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 13:44:39.993  INFO 26180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 13:44:39.994  INFO 26180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 13:44:40.138  INFO 26180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 13:44:40.138  INFO 26180 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2058 ms
+2019-10-11 13:44:40.418  INFO 26180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 13:44:40.547  INFO 26180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 13:44:40.917  WARN 26180 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 13:44:41.052  WARN 26180 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 13:44:41.617  INFO 26180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 13:44:41.617  INFO 26180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 13:44:41.618  INFO 26180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 13:44:41.618  INFO 26180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 13:44:41.676  INFO 26180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@654c7d2d, org.springframework.security.web.context.SecurityContextPersistenceFilter@43045f9f, org.springframework.security.web.header.HeaderWriterFilter@102ecc22, org.springframework.security.web.authentication.logout.LogoutFilter@26c47874, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3dffc764, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6403e24c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63c12e52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26cb5207, org.springframework.security.web.session.SessionManagementFilter@26dc9bd5, org.springframework.security.web.access.ExceptionTranslationFilter@433348bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e57e5d6]
+2019-10-11 13:44:41.843  INFO 26180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 13:44:41.985  INFO 26180 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 13:44:42.308  INFO 26180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 13:44:42.311  INFO 26180 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.643 seconds (JVM running for 7.466)
+2019-10-11 13:44:45.851  INFO 26180 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 13:44:45.851  INFO 26180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 13:44:45.870  INFO 26180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-10-11 13:44:53.951 DEBUG 26180 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 13:44:53.991 DEBUG 26180 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 13:44:54.019 DEBUG 26180 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 13:44:54.031 DEBUG 26180 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 13:44:54.032 DEBUG 26180 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 13:44:54.039 DEBUG 26180 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 13:44:54.174  INFO 26180 --- [http-nio-8080-exec-3] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 13:44:55.537 DEBUG 26180 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:44:55.538 DEBUG 26180 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:44:55.541 DEBUG 26180 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:44:55.543 DEBUG 26180 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:44:55.544 DEBUG 26180 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:44:55.553 DEBUG 26180 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:44:55.558 DEBUG 26180 --- [http-nio-8080-exec-10] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 13:44:55.559 DEBUG 26180 --- [http-nio-8080-exec-10] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 13:44:55.561 DEBUG 26180 --- [http-nio-8080-exec-10] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 13:44:55.562 DEBUG 26180 --- [http-nio-8080-exec-10] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 13:44:55.563 DEBUG 26180 --- [http-nio-8080-exec-10] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:44:55.568 DEBUG 26180 --- [http-nio-8080-exec-10] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 13:44:55.635 DEBUG 26180 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 13:44:55.636 DEBUG 26180 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 13:44:55.640 DEBUG 26180 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 13:44:55.641 DEBUG 26180 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 13:44:55.642 DEBUG 26180 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 13:44:55.660 DEBUG 26180 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 13:44:55.683 DEBUG 26180 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:44:55.684 DEBUG 26180 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:44:55.685 DEBUG 26180 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:44:55.686 DEBUG 26180 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:44:55.687 DEBUG 26180 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:44:55.694 DEBUG 26180 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:45:23.924 DEBUG 26180 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 13:45:23.925 DEBUG 26180 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 13:45:23.935 DEBUG 26180 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 13:45:23.937 DEBUG 26180 --- [http-nio-8080-exec-8] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 13:45:23.938 DEBUG 26180 --- [http-nio-8080-exec-8] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 13:45:23.950 DEBUG 26180 --- [http-nio-8080-exec-8] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 13:45:24.093  INFO 26180 --- [http-nio-8080-exec-8] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 13:45:25.219 DEBUG 26180 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:45:25.220 DEBUG 26180 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:45:25.221 DEBUG 26180 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:45:25.222 DEBUG 26180 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:45:25.223 DEBUG 26180 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:45:25.226 DEBUG 26180 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:45:25.248 DEBUG 26180 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 13:45:25.248 DEBUG 26180 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 13:45:25.249 DEBUG 26180 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 13:45:25.250 DEBUG 26180 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 13:45:25.252 DEBUG 26180 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:45:25.257 DEBUG 26180 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 13:45:25.258 DEBUG 26180 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 13:45:25.260 DEBUG 26180 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 13:45:25.262 DEBUG 26180 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 13:45:25.263 DEBUG 26180 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 13:45:25.264 DEBUG 26180 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 13:45:25.274 DEBUG 26180 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 13:45:25.327 DEBUG 26180 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:45:25.327 DEBUG 26180 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:45:25.328 DEBUG 26180 --- [http-nio-8080-exec-8] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:45:25.329 DEBUG 26180 --- [http-nio-8080-exec-8] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:45:25.330 DEBUG 26180 --- [http-nio-8080-exec-8] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:45:25.333 DEBUG 26180 --- [http-nio-8080-exec-8] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:46:04.591  INFO 38720 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 38720 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 13:46:04.629 DEBUG 38720 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 13:46:04.629  INFO 38720 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 13:46:06.893  INFO 38720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 13:46:06.922  INFO 38720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 13:46:06.922  INFO 38720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 13:46:07.059  INFO 38720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 13:46:07.060  INFO 38720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1881 ms
+2019-10-11 13:46:07.318  INFO 38720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 13:46:07.443  INFO 38720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 13:46:07.811  WARN 38720 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 13:46:07.936  WARN 38720 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 13:46:08.461  INFO 38720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 13:46:08.461  INFO 38720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 13:46:08.461  INFO 38720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 13:46:08.461  INFO 38720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 13:46:08.501  INFO 38720 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e57e5d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@558756be, org.springframework.security.web.header.HeaderWriterFilter@46c269e0, org.springframework.security.web.authentication.logout.LogoutFilter@26f46fa6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6dd1c3ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d1dcdff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d109c4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dfa915a, org.springframework.security.web.session.SessionManagementFilter@6069dd38, org.springframework.security.web.access.ExceptionTranslationFilter@262816a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f7989fa]
+2019-10-11 13:46:08.653  INFO 38720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 13:46:08.781  INFO 38720 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 13:46:09.105  INFO 38720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 13:46:09.110  INFO 38720 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.689 seconds (JVM running for 7.026)
+2019-10-11 13:46:12.067  INFO 38720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 13:46:12.068  INFO 38720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 13:46:12.080  INFO 38720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-11 13:46:20.040 DEBUG 38720 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 13:46:20.066 DEBUG 38720 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 13:46:20.091 DEBUG 38720 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 13:46:20.103 DEBUG 38720 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 13:46:20.104 DEBUG 38720 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 13:46:20.112 DEBUG 38720 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 13:46:20.255  INFO 38720 --- [http-nio-8080-exec-3] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 13:46:21.207 DEBUG 38720 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 13:46:21.208 DEBUG 38720 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 13:46:21.219 DEBUG 38720 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 13:46:21.612 DEBUG 38720 --- [http-nio-8080-exec-10] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:46:21.613 DEBUG 38720 --- [http-nio-8080-exec-10] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:46:21.615 DEBUG 38720 --- [http-nio-8080-exec-10] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:46:21.618 DEBUG 38720 --- [http-nio-8080-exec-10] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:46:21.618 DEBUG 38720 --- [http-nio-8080-exec-10] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:46:21.627 DEBUG 38720 --- [http-nio-8080-exec-10] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 13:46:21.632 DEBUG 38720 --- [http-nio-8080-exec-1] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 13:46:21.634 DEBUG 38720 --- [http-nio-8080-exec-1] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 13:46:21.637 DEBUG 38720 --- [http-nio-8080-exec-1] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 13:46:21.638 DEBUG 38720 --- [http-nio-8080-exec-1] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 13:46:21.638 DEBUG 38720 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 13:46:21.639 DEBUG 38720 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 13:46:21.639 DEBUG 38720 --- [http-nio-8080-exec-1] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:46:21.641 DEBUG 38720 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 13:46:21.642 DEBUG 38720 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 13:46:21.643 DEBUG 38720 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 13:46:21.644 DEBUG 38720 --- [http-nio-8080-exec-1] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 13:46:21.650 DEBUG 38720 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 13:46:21.667 DEBUG 38720 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 13:46:21.667 DEBUG 38720 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 13:46:21.671 DEBUG 38720 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 13:46:21.672 DEBUG 38720 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 13:46:21.673 DEBUG 38720 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 13:46:21.684 DEBUG 38720 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 14:00:21.005  INFO 32780 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 32780 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 14:00:21.012 DEBUG 32780 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 14:00:21.013  INFO 32780 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 14:00:25.425  INFO 32780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 14:00:25.505  INFO 32780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 14:00:25.506  INFO 32780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 14:00:26.375  INFO 32780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 14:00:26.379  INFO 32780 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5264 ms
+2019-10-11 14:00:28.190  INFO 32780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 14:00:28.430  INFO 32780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 14:00:29.055  WARN 32780 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 14:00:29.334  WARN 32780 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 14:00:30.458  INFO 32780 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 14:00:30.458  INFO 32780 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 14:00:30.459  INFO 32780 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 14:00:30.459  INFO 32780 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 14:00:30.795  INFO 32780 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@337bbfdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@68a4dcc6, org.springframework.security.web.header.HeaderWriterFilter@6981f8f3, org.springframework.security.web.authentication.logout.LogoutFilter@3dffc764, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58472096, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3804a9a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78054f54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52d97ab6, org.springframework.security.web.session.SessionManagementFilter@2eae4349, org.springframework.security.web.access.ExceptionTranslationFilter@4c6007fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1422ac7f]
+2019-10-11 14:00:31.164  INFO 32780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 14:00:31.488  INFO 32780 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 14:00:32.293  INFO 32780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 14:00:32.411  INFO 32780 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 12.965 seconds (JVM running for 14.789)
+2019-10-11 14:00:34.261  INFO 32780 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 14:00:34.262  INFO 32780 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 14:00:34.312  INFO 32780 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 48 ms
+2019-10-11 14:00:46.580 DEBUG 32780 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 14:00:46.618 DEBUG 32780 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 14:00:46.658 DEBUG 32780 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 14:00:46.669 DEBUG 32780 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 14:00:46.671 DEBUG 32780 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 14:00:46.679 DEBUG 32780 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 14:00:46.823  INFO 32780 --- [http-nio-8080-exec-9] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 14:00:47.883 DEBUG 32780 --- [http-nio-8080-exec-8] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 14:00:47.886 DEBUG 32780 --- [http-nio-8080-exec-8] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 14:00:47.896 DEBUG 32780 --- [http-nio-8080-exec-8] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 14:00:48.395 DEBUG 32780 --- [http-nio-8080-exec-10] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 14:00:48.395 DEBUG 32780 --- [http-nio-8080-exec-10] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 14:00:48.399 DEBUG 32780 --- [http-nio-8080-exec-10] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 14:00:48.400 DEBUG 32780 --- [http-nio-8080-exec-10] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 14:00:48.401 DEBUG 32780 --- [http-nio-8080-exec-10] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:00:48.408 DEBUG 32780 --- [http-nio-8080-exec-10] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 14:00:48.426 DEBUG 32780 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 14:00:48.426 DEBUG 32780 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 14:00:48.428 DEBUG 32780 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 14:00:48.430 DEBUG 32780 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 14:00:48.431 DEBUG 32780 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 14:00:48.434 DEBUG 32780 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 14:00:48.435 DEBUG 32780 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 14:00:48.438 DEBUG 32780 --- [http-nio-8080-exec-7] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 14:00:48.442 DEBUG 32780 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 14:00:48.445 DEBUG 32780 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 14:00:48.445 DEBUG 32780 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:00:48.453 DEBUG 32780 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 14:00:48.470 DEBUG 32780 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 14:00:48.471 DEBUG 32780 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 14:00:48.474 DEBUG 32780 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 14:00:48.476 DEBUG 32780 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 14:00:48.477 DEBUG 32780 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:00:48.487 DEBUG 32780 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 14:02:30.306  INFO 48888 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 48888 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 14:02:30.309 DEBUG 48888 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 14:02:30.310  INFO 48888 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 14:02:31.997  INFO 48888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 14:02:32.026  INFO 48888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 14:02:32.026  INFO 48888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 14:02:32.167  INFO 48888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 14:02:32.167  INFO 48888 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1782 ms
+2019-10-11 14:02:32.450  INFO 48888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 14:02:32.614  INFO 48888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 14:02:32.961  WARN 48888 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 14:02:33.093  WARN 48888 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 14:02:33.577  INFO 48888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 14:02:33.577  INFO 48888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 14:02:33.577  INFO 48888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 14:02:33.577  INFO 48888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 14:02:33.619  INFO 48888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@261ea657, org.springframework.security.web.context.SecurityContextPersistenceFilter@6944e53e, org.springframework.security.web.header.HeaderWriterFilter@4339baec, org.springframework.security.web.authentication.logout.LogoutFilter@78d6447a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7add323c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bc7e78e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38bb9d7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35c12c7a, org.springframework.security.web.session.SessionManagementFilter@61cd1c71, org.springframework.security.web.access.ExceptionTranslationFilter@4b790d86, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c77ba8f]
+2019-10-11 14:02:33.755  INFO 48888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 14:02:33.872  INFO 48888 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 14:02:34.259  INFO 48888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 14:02:34.265  INFO 48888 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.411 seconds (JVM running for 6.642)
+2019-10-11 14:02:45.693  INFO 48888 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 14:02:45.693  INFO 48888 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 14:02:45.705  INFO 48888 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-11 14:02:55.017 DEBUG 48888 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 14:02:55.045 DEBUG 48888 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 14:02:55.072 DEBUG 48888 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 14:02:55.095 DEBUG 48888 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 14:02:55.096 DEBUG 48888 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 14:02:55.105 DEBUG 48888 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 14:02:55.245  INFO 48888 --- [http-nio-8080-exec-3] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 14:02:59.822 DEBUG 48888 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 14:02:59.823 DEBUG 48888 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 14:02:59.842 DEBUG 48888 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 14:03:00.137 DEBUG 48888 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 14:03:00.137 DEBUG 48888 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 14:03:00.140 DEBUG 48888 --- [http-nio-8080-exec-6] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 14:03:00.142 DEBUG 48888 --- [http-nio-8080-exec-6] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 14:03:00.142 DEBUG 48888 --- [http-nio-8080-exec-6] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:03:00.150 DEBUG 48888 --- [http-nio-8080-exec-6] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 14:03:00.247 DEBUG 48888 --- [http-nio-8080-exec-5] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 14:03:00.247 DEBUG 48888 --- [http-nio-8080-exec-5] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 14:03:00.249 DEBUG 48888 --- [http-nio-8080-exec-5] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 14:03:00.250 DEBUG 48888 --- [http-nio-8080-exec-5] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 14:03:00.251 DEBUG 48888 --- [http-nio-8080-exec-5] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:03:00.256 DEBUG 48888 --- [http-nio-8080-exec-5] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 14:03:00.256 DEBUG 48888 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 14:03:00.256 DEBUG 48888 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 14:03:00.262 DEBUG 48888 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 14:03:00.264 DEBUG 48888 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 14:03:00.264 DEBUG 48888 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:03:00.271 DEBUG 48888 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 14:03:00.303 DEBUG 48888 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 14:03:00.303 DEBUG 48888 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 14:03:00.308 DEBUG 48888 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 14:03:00.310 DEBUG 48888 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 14:03:00.311 DEBUG 48888 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 14:03:00.319 DEBUG 48888 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 14:03:48.931  INFO 53056 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 53056 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 14:03:48.936 DEBUG 53056 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 14:03:48.936  INFO 53056 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 14:03:51.055  INFO 53056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 14:03:51.092  INFO 53056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 14:03:51.092  INFO 53056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 14:03:51.235  INFO 53056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 14:03:51.235  INFO 53056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2014 ms
+2019-10-11 14:03:51.498  INFO 53056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 14:03:51.671  INFO 53056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 14:03:52.032  WARN 53056 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 14:03:52.172  WARN 53056 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 14:03:52.626  INFO 53056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 14:03:52.627  INFO 53056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 14:03:52.627  INFO 53056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 14:03:52.627  INFO 53056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 14:03:52.669  INFO 53056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b5e7036, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e74a380, org.springframework.security.web.header.HeaderWriterFilter@117525fe, org.springframework.security.web.authentication.logout.LogoutFilter@1e7ab390, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30b131b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22a6e998, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15400fff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62dbe64e, org.springframework.security.web.session.SessionManagementFilter@5bc28f40, org.springframework.security.web.access.ExceptionTranslationFilter@646c0a67, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@337bbfdf]
+2019-10-11 14:03:52.804  INFO 53056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 14:03:52.929  INFO 53056 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 14:03:53.224  INFO 53056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 14:03:53.228  INFO 53056 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.532 seconds (JVM running for 6.718)
+2019-10-11 14:03:56.606  INFO 53056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 14:03:56.607  INFO 53056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 14:03:56.624  INFO 53056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-10-11 14:04:02.865 DEBUG 53056 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 14:04:02.890 DEBUG 53056 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 14:04:02.919 DEBUG 53056 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 14:04:02.933 DEBUG 53056 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 14:04:02.934 DEBUG 53056 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 14:04:02.942 DEBUG 53056 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 14:04:03.086  INFO 53056 --- [http-nio-8080-exec-3] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 14:04:06.665 DEBUG 53056 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 14:04:06.667 DEBUG 53056 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 14:04:06.675 DEBUG 53056 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 14:04:07.052 DEBUG 53056 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 14:04:07.053 DEBUG 53056 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 14:04:07.055 DEBUG 53056 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 14:04:07.057 DEBUG 53056 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 14:04:07.057 DEBUG 53056 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:04:07.067 DEBUG 53056 --- [http-nio-8080-exec-7] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 14:04:07.068 DEBUG 53056 --- [http-nio-8080-exec-7] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 14:04:07.070 DEBUG 53056 --- [http-nio-8080-exec-7] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 14:04:07.071 DEBUG 53056 --- [http-nio-8080-exec-7] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 14:04:07.072 DEBUG 53056 --- [http-nio-8080-exec-7] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:04:07.085 DEBUG 53056 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 14:04:07.091 DEBUG 53056 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 14:04:07.093 DEBUG 53056 --- [http-nio-8080-exec-7] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 14:04:07.114 DEBUG 53056 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 14:04:07.115 DEBUG 53056 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 14:04:07.116 DEBUG 53056 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 14:04:07.116 DEBUG 53056 --- [http-nio-8080-exec-9] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 14:04:07.118 DEBUG 53056 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 14:04:07.119 DEBUG 53056 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 14:04:07.120 DEBUG 53056 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 14:04:07.120 DEBUG 53056 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 14:04:07.122 DEBUG 53056 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 14:04:07.127 DEBUG 53056 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 14:04:07.145 DEBUG 53056 --- [http-nio-8080-exec-9] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
