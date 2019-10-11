@@ -92,7 +92,9 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESIONID")
                 .logoutSuccessHandler(myLogoutSuccessHandler);
-        http.rememberMe();
+        //开启免登陆功能，记住我。登录成功后，将cookies 发给浏览器，以后访问就  带上这个cookies。点击注销后，删除 cookies
+        //修改修改form中的name属性，rememberMeParameter("rememberMe")
+        http.rememberMe().rememberMeParameter("rememberMe");
 
     }
 
