@@ -30,4 +30,6 @@ public interface UsersService extends IService<Users> {
     int deleteUserByid(Integer id);
 
     Results<Users> getByFuzzyUsername(String username, Integer offset, Integer limit);
+
+    Results<Users> changePassword(String username, String oldPassword, String newPassword);
 }

@@ -1,5 +1,6 @@
 <!doctype html>
-<html class="x-admin-sm" xmlns:th="http://www.thymeleaf.org/">
+<html class="x-admin-sm" xmlns:th="http://www.thymeleaf.org/"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <meta charset="UTF-8">
     <title>后台登录页面</title>
@@ -39,7 +40,7 @@
     </ul>
     <ul class="layui-nav right" lay-filter="">
         <li class="layui-nav-item">
-            <a href="javascript:;">admin</a>
+            <a href="javascript:;" id="show-username">admin</a>
             <dl class="layui-nav-child">
                 <!-- 二级菜单 -->
                 <dd>
@@ -47,7 +48,7 @@
                 <dd>
                     <a onclick="xadmin.open('切换帐号','http://www.baidu.com')">切换帐号</a></dd>
                 <dd>
-                    <a href="./login.html">退出</a></dd>
+                    <a href="/logout">退出</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item to-index">
@@ -345,6 +346,8 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        var username=localStorage.username;
+        $("#show-username").text((username!=null&&username!=undefined)?username:"---");
 
 
         function Menu(eleId, userId) {

@@ -2,6 +2,8 @@ package com.lena.security;
 
 import com.lena.security.authentication.MyAuthenctiationFailureHandler;
 import com.lena.security.authentication.MyAuthenticationSuccessHandler;
+import com.lena.security.authentication.MyLogoutSuccessHandler;
+import com.lena.security.authentication.RestAuthenticationAccessDeniedhandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 
@@ -27,7 +29,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true) //开启security注解
 public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -37,6 +38,12 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private MyAuthenctiationFailureHandler myAuthenctiationFailureHandler;
+
+    @Autowired
+    private RestAuthenticationAccessDeniedhandler restAuthenticationAccessDeniedhandler;
+
+    @Autowired
+    private MyLogoutSuccessHandler myLogoutSuccessHandler;
 
     @Bean
     @Override
@@ -59,6 +66,7 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
+        http.headers().frameOptions().sameOrigin();
         http.authorizeRequests()
                 .antMatchers("/static/**",
                         "/login",
@@ -74,6 +82,15 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
                 .loginProcessingUrl("/login")
                 .successHandler(myAuthenticationSuccessHandler)
                 .failureHandler(myAuthenctiationFailureHandler);
+        //异常处理
+        http.exceptionHandling()
+                .accessDeniedHandler(restAuthenticationAccessDeniedhandler);
+        http.logout()
+                .permitAll()
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESIONID")
+                .logoutSuccessHandler(myLogoutSuccessHandler);
+
     }
 
     @Override
@@ -82,6 +99,7 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
         web.ignoring().antMatchers("/xadmin/**");
         web.ignoring().antMatchers("/treetable-lay/**");
         web.ignoring().antMatchers("/dtree/**");
+        web.ignoring().antMatchers("/myjs/**");
     }
 
 

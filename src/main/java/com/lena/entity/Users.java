@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import java.time.LocalDate;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
+import net.sf.jsqlparser.expression.DateTimeLiteralExpression;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
@@ -43,9 +44,9 @@ private static final long serialVersionUID=1L;
 
     private Integer status;
 
-    private LocalDateTime createtime;
+    private Date createtime;
 
-    private LocalDateTime updatetime;
+    private Date updatetime;
 
     //@Jsonformat(pattern="yyyy-MM-dd")
     private Date birthday;

@@ -19,7 +19,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.Resource;
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -49,13 +58,27 @@ public class Securitydemo930ApplicationTests {
 	private RolePermissionMapper rolePermissionMapper;
 
 
+	@Resource
+	DataSource dataSource;
+
+	@Test
+	public void contextLoads1() throws SQLException {
+		Connection connection = dataSource.getConnection();
+		PreparedStatement prepareStatement = connection
+				.prepareStatement("select * from sys_users where id='1'");
+		ResultSet resultSet = prepareStatement.executeQuery();
+		while (resultSet.next()) {
+			String name = resultSet.getString("username");
+			System.out.println(name);
+		}
+	}
 
 
 
 	@Test
 	public void contextLoads() {
 
-
+		//设置密码
 		Users admin = usersMapper.getUser("admin");
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		// 加密
@@ -64,6 +87,14 @@ public class Securitydemo930ApplicationTests {
 
 		usersMapper.updateById(admin);
 
+	}
+	@Test
+	public void createTime() {
+		//设置创建时间
+		Users admin = usersMapper.getUser("admin");
+		admin.setCreatetime(new Date());
+		admin.setUpdatetime(new Date());
+		usersMapper.updateById(admin);
 
 	}
 

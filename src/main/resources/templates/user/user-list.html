@@ -40,7 +40,7 @@
                     <div class="layui-card-header">
                        <!-- <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除
                         </button>-->
-                        <button class="layui-btn" onclick="xadmin.open('添加用户','/user/add',600,400)"><i
+                        <button class="layui-btn" onclick="xadmin.open('添加用户','/user/add',600,400)" permission="sys:user:add"><i
                                 class="layui-icon"></i>添加
                         </button>
                     </div>
@@ -98,7 +98,10 @@
                     , {field: 'birthday', title: '生日', width: 100}
                     , {fixed: 'right', title: '操作', toolbar: '#barDemo', width: 150}
                 ]
-            ]
+            ],
+            done:function () {
+                checkPermission()
+            }
         });
         //监听工具条
         table.on('tool(member)', function (obj) {
@@ -165,6 +168,7 @@
             });
             return false;
         });
+        checkPermission();
     });
 </script>
 
