@@ -3,8 +3,11 @@ package com.lena.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import lombok.Data;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
@@ -15,6 +18,7 @@ import java.io.Serializable;
  * @since 2019-09-30
  */
 @TableName("sys_role")
+@Data
 public class Role implements Serializable {
 
 private static final long serialVersionUID=1L;
@@ -26,59 +30,9 @@ private static final long serialVersionUID=1L;
 
     private String descirption;
 
-    private LocalDateTime createtime;
+    private Date createtime;
 
-    private LocalDateTime updatetime;
+    private Date updatetime;
 
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescirption() {
-        return descirption;
-    }
-
-    public void setDescirption(String descirption) {
-        this.descirption = descirption;
-    }
-
-    public LocalDateTime getCreatetime() {
-        return createtime;
-    }
-
-    public void setCreatetime(LocalDateTime createtime) {
-        this.createtime = createtime;
-    }
-
-    public LocalDateTime getUpdatetime() {
-        return updatetime;
-    }
-
-    public void setUpdatetime(LocalDateTime updatetime) {
-        this.updatetime = updatetime;
-    }
-
-    @Override
-    public String toString() {
-        return "Role{" +
-        "id=" + id +
-        ", name=" + name +
-        ", descirption=" + descirption +
-        ", createtime=" + createtime +
-        ", updatetime=" + updatetime +
-        "}";
-    }
 }

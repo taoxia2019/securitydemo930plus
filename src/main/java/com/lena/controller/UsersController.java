@@ -9,6 +9,8 @@ import com.lena.dto.UsersDTO;
 import com.lena.entity.Users;
 import com.lena.service.UsersService;
 import com.lena.utils.MD5;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -50,10 +52,19 @@ public class UsersController {
 
     @GetMapping("/list")
     @ResponseBody
+    @ApiOperation(value = "分页获取用户信息",notes = "分页获取用户信息")
+    @ApiImplicitParam(name="page",value="分页查询实体类",required = false)
     public Results<Users> getUsers(PageTableRequest page){
         page.countOffset();
 
         return usersService.getAllUsersByPage(page.getOffset(),page.getLimit());
+    }
+
+    @PostMapping("/changePassword")
+    @ApiOperation(value="修改密码")
+    @ResponseBody
+    public Results<Users> changePassword(String username,String oldPassword,String newPassword){
+        return usersService.changePassword(username,oldPassword,newPassword);
     }
 
     @GetMapping("/add")

@@ -19,7 +19,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -55,7 +58,7 @@ public class Securitydemo930ApplicationTests {
 	@Test
 	public void contextLoads() {
 
-
+		//设置密码
 		Users admin = usersMapper.getUser("admin");
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		// 加密
@@ -64,6 +67,14 @@ public class Securitydemo930ApplicationTests {
 
 		usersMapper.updateById(admin);
 
+	}
+	@Test
+	public void createTime() {
+		//设置创建时间
+		Users admin = usersMapper.getUser("admin");
+		admin.setCreatetime(new Date());
+		admin.setUpdatetime(new Date());
+		usersMapper.updateById(admin);
 
 	}
 

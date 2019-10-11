@@ -15,12 +15,14 @@ import com.lena.entity.Users;
 import com.lena.service.UsersService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collector;
 
@@ -52,8 +54,8 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
     public Results<Users> saveUsers(UsersDTO usersDTO, Integer roleid) {
 
         if (roleid != null) {
-            usersDTO.setCreatetime(LocalDateTime.now());
-            usersDTO.setUpdatetime(LocalDateTime.now());
+            usersDTO.setCreatetime(new Date());
+            usersDTO.setUpdatetime(new Date());
             usersMapper.insert(usersDTO);
 
             UserRole userRole = new UserRole();
@@ -116,5 +118,22 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         List<Users> records = usersIPage.getRecords();
 
         return Results.success(total.intValue(),records);
+    }
+
+    @Override
+    public Results<Users> changePassword(String username, String oldPassword, String newPassword) {
+        Users u=usersMapper.getUser("admin");
+        if(u==null){
+            return Results.failure(1,"用户不存在");
+        }
+        if(!new BCryptPasswordEncoder().encode(oldPassword).equals(u.getPassword())){
+            return Results.failure(1,"旧密码错误");
+        }
+        String encodedPassword = new BCryptPasswordEncoder().encode(newPassword);
+        u.setPassword(encodedPassword);
+        usersMapper.updateById(u);
+        //usersMapper.changePassword(u.getId(),new BCryptPasswordEncoder().encode(newPassword));
+
+        return Results.success();
     }
 }

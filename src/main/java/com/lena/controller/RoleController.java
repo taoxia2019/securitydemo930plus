@@ -17,6 +17,7 @@ import org.springframework.stereotype.Controller;
 
 import javax.xml.transform.Result;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -69,8 +70,8 @@ public class RoleController {
     @PostMapping("/add")
     @ResponseBody
     public Results<Role> saveRole(@RequestBody RoleDTO roleDTO){
-        roleDTO.setCreatetime(LocalDateTime.now());
-        roleDTO.setUpdatetime(LocalDateTime.now());
+        roleDTO.setCreatetime(new Date());
+        roleDTO.setUpdatetime(new Date());
 
         return roleService.saveRole(roleDTO);
     }
