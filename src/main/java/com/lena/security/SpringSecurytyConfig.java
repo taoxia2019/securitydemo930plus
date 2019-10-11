@@ -20,6 +20,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import javax.annotation.Resource;
+
 /**
  * @ClassName SpringSecurytyConfig
  * @Description DOTO
@@ -31,7 +33,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
+    @Resource
     private UserDetailsService userDetailsService;
     @Autowired
     private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
@@ -90,6 +92,7 @@ public class SpringSecurytyConfig extends WebSecurityConfigurerAdapter {
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESIONID")
                 .logoutSuccessHandler(myLogoutSuccessHandler);
+        http.rememberMe();
 
     }
 
