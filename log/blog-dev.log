@@ -4582,3 +4582,949 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], te
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
+2019-10-11 07:57:26.977  INFO 18328 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 18328 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 07:57:26.981 DEBUG 18328 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 07:57:26.982  INFO 18328 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 07:57:28.871  INFO 18328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 07:57:28.902  INFO 18328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 07:57:28.903  INFO 18328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 07:57:29.073  INFO 18328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 07:57:29.073  INFO 18328 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1986 ms
+2019-10-11 07:57:29.401  INFO 18328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 07:57:30.526 ERROR 18328 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:486)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:434)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:633)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:190)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7ed7e3de.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7ed7e3de$$FastClassBySpringCGLIB$$376a7014.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7ed7e3de.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.lena.Securitydemo930Application.main(Securitydemo930Application.java:12)
+
+2019-10-11 07:57:30.541  WARN 18328 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionController': Unsatisfied dependency expressed through field 'permissionService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\workspace\securitydemo930plus\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-10-11 07:57:30.548  INFO 18328 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-11 07:57:30.568  INFO 18328 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-11 07:57:30.577 ERROR 18328 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionController': Unsatisfied dependency expressed through field 'permissionService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\workspace\securitydemo930plus\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.lena.Securitydemo930Application.main(Securitydemo930Application.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\workspace\securitydemo930plus\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permissionMapper' defined in file [I:\workspace\securitydemo930plus\target\classes\com\lena\dao\PermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 56 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:49)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:489)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:434)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:633)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:190)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7ed7e3de.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7ed7e3de$$FastClassBySpringCGLIB$$376a7014.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$7ed7e3de.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+
+2019-10-11 08:08:15.796  INFO 42144 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 42144 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 08:08:15.800 DEBUG 42144 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 08:08:15.800  INFO 42144 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 08:08:17.464  INFO 42144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 08:08:17.494  INFO 42144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 08:08:17.495  INFO 42144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 08:08:17.621  INFO 42144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 08:08:17.621  INFO 42144 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1748 ms
+2019-10-11 08:08:17.882  INFO 42144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 08:08:18.028  INFO 42144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 08:08:18.549  WARN 42144 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 08:08:18.708  WARN 42144 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 08:08:19.254  INFO 42144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 08:08:19.255  INFO 42144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 08:08:19.255  INFO 42144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 08:08:19.308  INFO 42144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@625d9132, org.springframework.security.web.context.SecurityContextPersistenceFilter@10a0fe30, org.springframework.security.web.header.HeaderWriterFilter@1229a2b7, org.springframework.security.web.authentication.logout.LogoutFilter@4eba373c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15400fff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f70249, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@433348bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77774571, org.springframework.security.web.session.SessionManagementFilter@51c959a4, org.springframework.security.web.access.ExceptionTranslationFilter@66273da0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cb7fa71]
+2019-10-11 08:08:19.446  INFO 42144 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 08:08:19.598  INFO 42144 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 08:08:19.900  INFO 42144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 08:08:19.904  INFO 42144 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.407 seconds (JVM running for 6.678)
+2019-10-11 08:08:31.087  INFO 42144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 08:08:31.088  INFO 42144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 08:08:31.100  INFO 42144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-11 08:08:41.930 DEBUG 42144 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 08:08:41.956 DEBUG 42144 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 08:08:41.985 DEBUG 42144 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 08:08:41.996 DEBUG 42144 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 08:08:41.996 DEBUG 42144 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 08:08:42.003 DEBUG 42144 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 08:08:42.004  WARN 42144 --- [http-nio-8080-exec-4] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2019-10-11 08:08:42.005  INFO 42144 --- [http-nio-8080-exec-4] c.l.s.a.MyAuthenctiationFailureHandler   : 登录失败
+2019-10-11 08:09:30.346  INFO 40588 --- [main] c.lena.Securitydemo930ApplicationTests   : Starting Securitydemo930ApplicationTests on PC-20190301SZZL with PID 40588 (started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 08:09:30.348 DEBUG 40588 --- [main] c.lena.Securitydemo930ApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 08:09:30.349  INFO 40588 --- [main] c.lena.Securitydemo930ApplicationTests   : The following profiles are active: dev
+2019-10-11 08:09:34.877  INFO 40588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 08:09:35.342  INFO 40588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 08:09:35.843  WARN 40588 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 08:09:36.305  WARN 40588 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 08:09:37.373  INFO 40588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 08:09:37.375  INFO 40588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 08:09:37.375  INFO 40588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 08:09:37.907  INFO 40588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37c36608, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b1c538d, org.springframework.security.web.header.HeaderWriterFilter@75181b50, org.springframework.security.web.authentication.logout.LogoutFilter@7b4a0aef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27e7c77f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6325f352, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@544e8149, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d497a91, org.springframework.security.web.session.SessionManagementFilter@5f254608, org.springframework.security.web.access.ExceptionTranslationFilter@d277579, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c2584d3]
+2019-10-11 08:09:38.826  INFO 40588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 08:09:39.085  INFO 40588 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 08:09:39.997  INFO 40588 --- [main] c.lena.Securitydemo930ApplicationTests   : Started Securitydemo930ApplicationTests in 11.994 seconds (JVM running for 16.054)
+2019-10-11 08:09:40.574 DEBUG 40588 --- [main] com.lena.dao.UsersMapper.getUser         : ==>  Preparing: select * from sys_users t where t.username=? 
+2019-10-11 08:09:40.633 DEBUG 40588 --- [main] com.lena.dao.UsersMapper.getUser         : ==> Parameters: admin(String)
+2019-10-11 08:09:40.702 DEBUG 40588 --- [main] com.lena.dao.UsersMapper.getUser         : <==      Total: 1
+2019-10-11 08:09:41.007 DEBUG 40588 --- [main] com.lena.dao.UsersMapper.updateById      : ==>  Preparing: UPDATE sys_users SET username=?, password=?, phone=?, dept=?, email=?, gangweimingcheng=?, status=?, birthday=? WHERE id=? 
+2019-10-11 08:09:41.016 DEBUG 40588 --- [main] com.lena.dao.UsersMapper.updateById      : ==> Parameters: admin(String), $2a$10$btw0sg2/MUgRgE8viXLRP.BiCkEVTc5m31vpMXLqU0WP1a1xOALjO(String), 123456789(String), zhuzha(String), 456@qq.com(String), guanliyuan(String), 1(Integer), 2019-01-12 08:00:00.0(Timestamp), 1(Integer)
+2019-10-11 08:09:41.434  INFO 40588 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-11 08:09:41.629  INFO 40588 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-11 08:09:41.679  INFO 40588 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-11 08:11:12.851  INFO 41168 --- [main] c.lena.Securitydemo930ApplicationTests   : Starting Securitydemo930ApplicationTests on PC-20190301SZZL with PID 41168 (started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 08:11:12.853 DEBUG 41168 --- [main] c.lena.Securitydemo930ApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 08:11:12.854  INFO 41168 --- [main] c.lena.Securitydemo930ApplicationTests   : The following profiles are active: dev
+2019-10-11 08:11:15.975  INFO 41168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 08:11:16.312  INFO 41168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 08:11:16.736  WARN 41168 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 08:11:17.066  WARN 41168 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 08:11:18.214  INFO 41168 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 08:11:18.215  INFO 41168 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 08:11:18.215  INFO 41168 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 08:11:18.719  INFO 41168 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d11ceef, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b122839, org.springframework.security.web.header.HeaderWriterFilter@6a818392, org.springframework.security.web.authentication.logout.LogoutFilter@15c4af7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bd51d3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d277579, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a81065e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cb2918c, org.springframework.security.web.session.SessionManagementFilter@512d6e60, org.springframework.security.web.access.ExceptionTranslationFilter@984169e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2100d047]
+2019-10-11 08:11:19.551  INFO 41168 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 08:11:19.829  INFO 41168 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 08:11:20.769  INFO 41168 --- [main] c.lena.Securitydemo930ApplicationTests   : Started Securitydemo930ApplicationTests in 9.443 seconds (JVM running for 11.321)
+2019-10-11 08:11:21.208 DEBUG 41168 --- [main] com.lena.dao.UsersMapper.getUser         : ==>  Preparing: select * from sys_users t where t.username=? 
+2019-10-11 08:11:21.254 DEBUG 41168 --- [main] com.lena.dao.UsersMapper.getUser         : ==> Parameters: admin(String)
+2019-10-11 08:11:21.311 DEBUG 41168 --- [main] com.lena.dao.UsersMapper.getUser         : <==      Total: 1
+2019-10-11 08:11:21.496 DEBUG 41168 --- [main] com.lena.dao.UsersMapper.updateById      : ==>  Preparing: UPDATE sys_users SET username=?, password=?, phone=?, dept=?, email=?, gangweimingcheng=?, status=?, birthday=? WHERE id=? 
+2019-10-11 08:11:21.508 DEBUG 41168 --- [main] com.lena.dao.UsersMapper.updateById      : ==> Parameters: admin(String), $2a$10$DaLAX8yxAd4GbG87D0wN3.oqdmgRyujVfs7Dma0I4tzgTofvb6qvq(String), 123456789(String), zhuzha(String), 456@qq.com(String), guanliyuan(String), 1(Integer), 2019-01-12 08:00:00.0(Timestamp), 1(Integer)
+2019-10-11 08:11:21.511 DEBUG 41168 --- [main] com.lena.dao.UsersMapper.updateById      : <==    Updates: 1
+2019-10-11 08:11:21.529  INFO 41168 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-11 08:11:21.532  INFO 41168 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-11 08:11:21.552  INFO 41168 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-11 08:11:38.853  INFO 24088 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 24088 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 08:11:38.857 DEBUG 24088 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 08:11:38.857  INFO 24088 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 08:11:40.533  INFO 24088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 08:11:40.560  INFO 24088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 08:11:40.561  INFO 24088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 08:11:40.690  INFO 24088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 08:11:40.691  INFO 24088 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1754 ms
+2019-10-11 08:11:40.970  INFO 24088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 08:11:41.124  INFO 24088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 08:11:41.573  WARN 24088 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 08:11:41.729  WARN 24088 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 08:11:42.215  INFO 24088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 08:11:42.216  INFO 24088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 08:11:42.216  INFO 24088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 08:11:42.261  INFO 24088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2643d762, org.springframework.security.web.context.SecurityContextPersistenceFilter@71904469, org.springframework.security.web.header.HeaderWriterFilter@7a729f84, org.springframework.security.web.authentication.logout.LogoutFilter@1dba4e06, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26dc9bd5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@761e788f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@767191b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6403e24c, org.springframework.security.web.session.SessionManagementFilter@554f0dfb, org.springframework.security.web.access.ExceptionTranslationFilter@1e8ab90f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fa23c]
+2019-10-11 08:11:42.402  INFO 24088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 08:11:42.533  INFO 24088 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 08:11:42.835  INFO 24088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 08:11:42.839  INFO 24088 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.284 seconds (JVM running for 6.444)
+2019-10-11 08:11:46.883  INFO 24088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 08:11:46.883  INFO 24088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 08:11:46.894  INFO 24088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-11 08:11:54.989 DEBUG 24088 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 08:11:55.015 DEBUG 24088 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 08:11:55.040 DEBUG 24088 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 08:11:55.052 DEBUG 24088 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 08:11:55.053 DEBUG 24088 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 08:11:55.061 DEBUG 24088 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 08:11:55.199  INFO 24088 --- [http-nio-8080-exec-2] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 08:11:56.309 DEBUG 24088 --- [http-nio-8080-exec-7] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 08:11:56.309 DEBUG 24088 --- [http-nio-8080-exec-7] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 08:11:56.318 DEBUG 24088 --- [http-nio-8080-exec-7] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:18:59.528  INFO 30968 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 30968 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 09:18:59.532 DEBUG 30968 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 09:18:59.532  INFO 30968 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 09:19:01.352  INFO 30968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 09:19:01.382  INFO 30968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 09:19:01.383  INFO 30968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 09:19:01.535  INFO 30968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 09:19:01.535  INFO 30968 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1827 ms
+2019-10-11 09:19:01.883  INFO 30968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 09:19:02.049  INFO 30968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 09:19:02.397  WARN 30968 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 09:19:02.523  WARN 30968 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 09:19:02.986  INFO 30968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 09:19:02.987  INFO 30968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 09:19:02.987  INFO 30968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 09:19:03.032  INFO 30968 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31ee2fdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b9396d3, org.springframework.security.web.header.HeaderWriterFilter@2a3194c6, org.springframework.security.web.authentication.logout.LogoutFilter@4beaf6bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10a0fe30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a472566, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34d52ecd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@262816a8, org.springframework.security.web.session.SessionManagementFilter@30364216, org.springframework.security.web.access.ExceptionTranslationFilter@35d5ac51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1229a2b7]
+2019-10-11 09:19:03.160  INFO 30968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 09:19:03.307  INFO 30968 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 09:19:03.638  INFO 30968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 09:19:03.642  INFO 30968 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.249 seconds (JVM running for 6.441)
+2019-10-11 09:19:30.084  INFO 30968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 09:19:30.084  INFO 30968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 09:19:30.096  INFO 30968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-11 09:19:37.545 DEBUG 30968 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 09:19:37.573 DEBUG 30968 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.selectList      : ==> Parameters: amdin(String)
+2019-10-11 09:19:37.615 DEBUG 30968 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.selectList      : <==      Total: 0
+2019-10-11 09:19:37.619 ERROR 30968 --- [http-nio-8080-exec-7] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Index: 0, Size: 0
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.lena.service.impl.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:41)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 54 common frames omitted
+
+2019-10-11 09:19:37.621  INFO 30968 --- [http-nio-8080-exec-7] c.l.s.a.MyAuthenctiationFailureHandler   : 登录失败
+2019-10-11 09:19:41.538 DEBUG 30968 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 09:19:41.538 DEBUG 30968 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==> Parameters: amdin(String)
+2019-10-11 09:19:41.540 DEBUG 30968 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : <==      Total: 0
+2019-10-11 09:19:41.541 ERROR 30968 --- [http-nio-8080-exec-4] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Index: 0, Size: 0
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:200)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.lena.service.impl.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:41)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 54 common frames omitted
+
+2019-10-11 09:19:41.542  INFO 30968 --- [http-nio-8080-exec-4] c.l.s.a.MyAuthenctiationFailureHandler   : 登录失败
+2019-10-11 09:20:59.253 DEBUG 30968 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 09:20:59.254 DEBUG 30968 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 09:20:59.261 DEBUG 30968 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 09:20:59.271 DEBUG 30968 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:20:59.272 DEBUG 30968 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:20:59.281 DEBUG 30968 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:20:59.411  INFO 30968 --- [http-nio-8080-exec-2] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 09:21:00.550 DEBUG 30968 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:21:00.551 DEBUG 30968 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:21:00.559 DEBUG 30968 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:23:58.007  INFO 54280 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 54280 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 09:23:58.011 DEBUG 54280 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 09:23:58.011  INFO 54280 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 09:23:59.839  INFO 54280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 09:23:59.868  INFO 54280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 09:23:59.869  INFO 54280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 09:24:00.025  INFO 54280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 09:24:00.026  INFO 54280 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1857 ms
+2019-10-11 09:24:00.329  INFO 54280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 09:24:00.460  INFO 54280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 09:24:00.803  WARN 54280 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 09:24:00.936  WARN 54280 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 09:24:01.371  INFO 54280 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 09:24:01.372  INFO 54280 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 09:24:01.373  INFO 54280 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 09:24:01.421  INFO 54280 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@227a47, org.springframework.security.web.context.SecurityContextPersistenceFilter@60325987, org.springframework.security.web.header.HeaderWriterFilter@65bdd558, org.springframework.security.web.authentication.logout.LogoutFilter@25290bca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d109c4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3374b5bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c77ba8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9596ce8, org.springframework.security.web.session.SessionManagementFilter@4beaf6bd, org.springframework.security.web.access.ExceptionTranslationFilter@fab35b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6403e24c]
+2019-10-11 09:24:01.547  INFO 54280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 09:24:01.668  INFO 54280 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 09:24:01.994  INFO 54280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 09:24:01.999  INFO 54280 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.229 seconds (JVM running for 6.498)
+2019-10-11 09:24:07.486  INFO 54280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 09:24:07.487  INFO 54280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 09:24:07.499  INFO 54280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-11 09:24:15.919 DEBUG 54280 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 09:24:15.944 DEBUG 54280 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 09:24:15.973 DEBUG 54280 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 09:24:15.990 DEBUG 54280 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:24:15.990 DEBUG 54280 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:24:15.998 DEBUG 54280 --- [http-nio-8080-exec-3] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:24:16.160  INFO 54280 --- [http-nio-8080-exec-3] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 09:24:17.160 DEBUG 54280 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:24:17.161 DEBUG 54280 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:24:17.171 DEBUG 54280 --- [http-nio-8080-exec-6] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:24:17.548 DEBUG 54280 --- [http-nio-8080-exec-9] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 09:24:17.548 DEBUG 54280 --- [http-nio-8080-exec-9] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 09:24:17.551 DEBUG 54280 --- [http-nio-8080-exec-9] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 09:24:17.552 DEBUG 54280 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 09:24:17.550 DEBUG 54280 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 09:24:17.553 DEBUG 54280 --- [http-nio-8080-exec-9] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 09:24:17.555 DEBUG 54280 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 09:24:17.555 DEBUG 54280 --- [http-nio-8080-exec-9] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:24:17.556 DEBUG 54280 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 09:24:17.560 DEBUG 54280 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 09:24:17.561 DEBUG 54280 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 09:24:17.563 DEBUG 54280 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 09:24:17.563 DEBUG 54280 --- [http-nio-8080-exec-9] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 09:24:17.563 DEBUG 54280 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 09:24:17.564 DEBUG 54280 --- [http-nio-8080-exec-7] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 09:24:17.565 DEBUG 54280 --- [http-nio-8080-exec-7] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:24:17.575 DEBUG 54280 --- [http-nio-8080-exec-1] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 09:24:17.584 DEBUG 54280 --- [http-nio-8080-exec-7] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 09:24:22.067 DEBUG 54280 --- [http-nio-8080-exec-5] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 09:24:22.068 DEBUG 54280 --- [http-nio-8080-exec-5] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 09:24:22.076 DEBUG 54280 --- [http-nio-8080-exec-5] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 09:54:26.625  INFO 46632 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 46632 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 09:54:26.630 DEBUG 46632 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 09:54:26.630  INFO 46632 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 09:54:28.527  INFO 46632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 09:54:28.557  INFO 46632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 09:54:28.557  INFO 46632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 09:54:28.701  INFO 46632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 09:54:28.701  INFO 46632 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1785 ms
+2019-10-11 09:54:29.009  INFO 46632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 09:54:29.143  INFO 46632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 09:54:29.504  WARN 46632 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 09:54:29.637  WARN 46632 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 09:54:30.048  INFO 46632 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 09:54:30.048  INFO 46632 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 09:54:30.048  INFO 46632 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 09:54:30.090  INFO 46632 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65b97f47, org.springframework.security.web.context.SecurityContextPersistenceFilter@660f0c, org.springframework.security.web.header.HeaderWriterFilter@48d293ee, org.springframework.security.web.authentication.logout.LogoutFilter@5d43409a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@421056e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b1f5012, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ac86d6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@255eaa6b, org.springframework.security.web.session.SessionManagementFilter@22587507, org.springframework.security.web.access.ExceptionTranslationFilter@5e1d03d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70228253]
+2019-10-11 09:54:30.228  INFO 46632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 09:54:30.358  INFO 46632 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 09:54:30.687  INFO 46632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 09:54:30.692  INFO 46632 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.241 seconds (JVM running for 6.353)
+2019-10-11 09:56:15.473  INFO 46632 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 09:56:15.474  INFO 46632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 09:56:15.489  INFO 46632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-11 09:56:24.974 DEBUG 46632 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 09:56:25.009 DEBUG 46632 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 09:56:25.037 DEBUG 46632 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 09:56:25.050 DEBUG 46632 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:56:25.050 DEBUG 46632 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:56:25.059 DEBUG 46632 --- [http-nio-8080-exec-2] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:56:25.189  INFO 46632 --- [http-nio-8080-exec-2] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 09:56:26.319 DEBUG 46632 --- [http-nio-8080-exec-1] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:56:26.319 DEBUG 46632 --- [http-nio-8080-exec-1] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:56:26.327 DEBUG 46632 --- [http-nio-8080-exec-1] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:56:26.890 DEBUG 46632 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 09:56:26.891 DEBUG 46632 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 09:56:26.894 DEBUG 46632 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 09:56:26.897 DEBUG 46632 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 09:56:26.897 DEBUG 46632 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:56:26.905 DEBUG 46632 --- [http-nio-8080-exec-5] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 09:56:27.015 DEBUG 46632 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 09:56:27.016 DEBUG 46632 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 09:56:27.018 DEBUG 46632 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 09:56:27.019 DEBUG 46632 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 09:56:27.019 DEBUG 46632 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:56:27.030 DEBUG 46632 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 09:56:27.070 DEBUG 46632 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 09:56:27.071 DEBUG 46632 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 09:56:27.080 DEBUG 46632 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 09:56:27.081 DEBUG 46632 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 09:56:27.082 DEBUG 46632 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:56:27.086 DEBUG 46632 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 09:56:27.216 DEBUG 46632 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 09:56:27.218 DEBUG 46632 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 09:56:27.219 DEBUG 46632 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 09:56:27.221 DEBUG 46632 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 09:56:27.221 DEBUG 46632 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 09:56:27.225 DEBUG 46632 --- [http-nio-8080-exec-2] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 09:56:31.262 ERROR 46632 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-11 09:56:31.269 ERROR 46632 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-11 09:57:15.841  INFO 53844 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 53844 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 09:57:15.845 DEBUG 53844 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 09:57:15.846  INFO 53844 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 09:57:17.603  INFO 53844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 09:57:17.640  INFO 53844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 09:57:17.641  INFO 53844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 09:57:17.790  INFO 53844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 09:57:17.790  INFO 53844 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1846 ms
+2019-10-11 09:57:18.064  INFO 53844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 09:57:18.193  INFO 53844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 09:57:18.547  WARN 53844 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 09:57:18.684  WARN 53844 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 09:57:34.485  INFO 54216 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 54216 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 09:57:34.489 DEBUG 54216 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 09:57:34.489  INFO 54216 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 09:57:36.486  INFO 54216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 09:57:36.514  INFO 54216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 09:57:36.514  INFO 54216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 09:57:36.639  INFO 54216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 09:57:36.640  INFO 54216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1856 ms
+2019-10-11 09:57:36.870  INFO 54216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 09:57:37.046  INFO 54216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 09:57:37.370  WARN 54216 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 09:57:37.514  WARN 54216 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 09:57:37.993  INFO 54216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 09:57:37.993  INFO 54216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 09:57:37.993  INFO 54216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 09:57:38.041  INFO 54216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cb7fa71, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fa23c, org.springframework.security.web.header.HeaderWriterFilter@1effd53c, org.springframework.security.web.authentication.logout.LogoutFilter@63c12e52, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e57e5d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@433348bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f236de0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dffc764, org.springframework.security.web.session.SessionManagementFilter@6920614, org.springframework.security.web.access.ExceptionTranslationFilter@31ee2fdb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e74a380]
+2019-10-11 09:57:38.163  INFO 54216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 09:57:38.274  INFO 54216 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 09:57:38.572  INFO 54216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 09:57:38.576  INFO 54216 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 4.962 seconds (JVM running for 6.008)
+2019-10-11 09:57:44.985  INFO 54216 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 09:57:44.986  INFO 54216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 09:57:45.001  INFO 54216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-10-11 09:57:52.543 DEBUG 54216 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 09:57:52.567 DEBUG 54216 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 09:57:52.592 DEBUG 54216 --- [http-nio-8080-exec-5] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 09:57:52.603 DEBUG 54216 --- [http-nio-8080-exec-5] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:57:52.603 DEBUG 54216 --- [http-nio-8080-exec-5] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:57:52.611 DEBUG 54216 --- [http-nio-8080-exec-5] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:57:52.743  INFO 54216 --- [http-nio-8080-exec-5] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 09:57:53.771 DEBUG 54216 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 09:57:53.772 DEBUG 54216 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 09:57:53.781 DEBUG 54216 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 09:57:54.099 DEBUG 54216 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 09:57:54.100 DEBUG 54216 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 09:57:54.104 DEBUG 54216 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 09:57:54.106 DEBUG 54216 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 09:57:54.107 DEBUG 54216 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 09:57:54.122 DEBUG 54216 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 09:57:54.122 DEBUG 54216 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 09:57:54.126 DEBUG 54216 --- [http-nio-8080-exec-7] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 09:57:54.127 DEBUG 54216 --- [http-nio-8080-exec-7] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 09:57:54.134 DEBUG 54216 --- [http-nio-8080-exec-7] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:57:54.139 DEBUG 54216 --- [http-nio-8080-exec-7] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 09:57:54.143 DEBUG 54216 --- [http-nio-8080-exec-8] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 09:57:54.182 DEBUG 54216 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 09:57:54.182 DEBUG 54216 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 09:57:54.184 DEBUG 54216 --- [http-nio-8080-exec-4] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 09:57:54.185 DEBUG 54216 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 09:57:54.186 DEBUG 54216 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:57:54.196 DEBUG 54216 --- [http-nio-8080-exec-4] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 09:57:58.023 DEBUG 54216 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 09:57:58.023 DEBUG 54216 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 09:57:58.024 DEBUG 54216 --- [http-nio-8080-exec-2] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 09:57:58.025 DEBUG 54216 --- [http-nio-8080-exec-2] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 09:57:58.026 DEBUG 54216 --- [http-nio-8080-exec-2] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 09:57:58.032 DEBUG 54216 --- [http-nio-8080-exec-2] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 10:12:07.231  INFO 39700 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 39700 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 10:12:07.238 DEBUG 39700 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 10:12:07.238  INFO 39700 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 10:12:08.925  INFO 39700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 10:12:08.952  INFO 39700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 10:12:08.952  INFO 39700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 10:12:09.110  INFO 39700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 10:12:09.110  INFO 39700 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1770 ms
+2019-10-11 10:12:09.461  INFO 39700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 10:12:09.591  INFO 39700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 10:12:09.982  WARN 39700 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 10:12:10.132  WARN 39700 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 10:12:10.546  INFO 39700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 10:12:10.546  INFO 39700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 10:12:10.546  INFO 39700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 10:12:10.547  INFO 39700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 10:12:10.589  INFO 39700 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e5af8e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@e84fb85, org.springframework.security.web.header.HeaderWriterFilter@3e33d73e, org.springframework.security.web.authentication.logout.LogoutFilter@15400fff, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@337bbfdf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@646c0a67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55e42449, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30b131b2, org.springframework.security.web.session.SessionManagementFilter@623dcf2a, org.springframework.security.web.access.ExceptionTranslationFilter@6edcad64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59072e9d]
+2019-10-11 10:12:10.718  INFO 39700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 10:12:10.844  INFO 39700 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 10:12:11.171  INFO 39700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 10:12:11.175  INFO 39700 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 5.542 seconds (JVM running for 6.682)
+2019-10-11 10:12:16.716  INFO 39700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 10:12:16.716  INFO 39700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 10:12:16.732  INFO 39700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-10-11 10:12:26.889 DEBUG 39700 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 10:12:26.918 DEBUG 39700 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 10:12:26.949 DEBUG 39700 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 10:12:26.960 DEBUG 39700 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 10:12:26.961 DEBUG 39700 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 10:12:26.972 DEBUG 39700 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 10:12:27.105  INFO 39700 --- [http-nio-8080-exec-4] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 10:12:28.195 DEBUG 39700 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 10:12:28.196 DEBUG 39700 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 10:12:28.206 DEBUG 39700 --- [http-nio-8080-exec-9] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 10:12:28.529 DEBUG 39700 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 10:12:28.530 DEBUG 39700 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 10:12:28.532 DEBUG 39700 --- [http-nio-8080-exec-6] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 10:12:28.533 DEBUG 39700 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 10:12:28.534 DEBUG 39700 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 10:12:28.540 DEBUG 39700 --- [http-nio-8080-exec-6] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 10:12:28.543 DEBUG 39700 --- [http-nio-8080-exec-10] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 10:12:28.543 DEBUG 39700 --- [http-nio-8080-exec-10] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 10:12:28.545 DEBUG 39700 --- [http-nio-8080-exec-10] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 10:12:28.546 DEBUG 39700 --- [http-nio-8080-exec-10] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 10:12:28.547 DEBUG 39700 --- [http-nio-8080-exec-10] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 10:12:28.553 DEBUG 39700 --- [http-nio-8080-exec-10] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 10:12:28.591 DEBUG 39700 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 10:12:28.592 DEBUG 39700 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 10:12:28.594 DEBUG 39700 --- [http-nio-8080-exec-3] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 10:12:28.596 DEBUG 39700 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 10:12:28.597 DEBUG 39700 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 10:12:28.602 DEBUG 39700 --- [http-nio-8080-exec-3] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 10:12:28.623 DEBUG 39700 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 10:12:28.624 DEBUG 39700 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 10:12:28.625 DEBUG 39700 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 10:12:28.626 DEBUG 39700 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 10:12:28.626 DEBUG 39700 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 10:12:28.632 DEBUG 39700 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 10:15:23.195  INFO 29876 --- [main] com.lena.Securitydemo930Application      : Starting Securitydemo930Application on PC-20190301SZZL with PID 29876 (I:\workspace\securitydemo930plus\target\classes started by Administrator in I:\workspace\securitydemo930plus)
+2019-10-11 10:15:23.204 DEBUG 29876 --- [main] com.lena.Securitydemo930Application      : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 10:15:23.204  INFO 29876 --- [main] com.lena.Securitydemo930Application      : The following profiles are active: dev
+2019-10-11 10:15:25.878  INFO 29876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-11 10:15:25.926  INFO 29876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 10:15:25.926  INFO 29876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-11 10:15:26.107  INFO 29876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 10:15:26.108  INFO 29876 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2751 ms
+2019-10-11 10:15:26.477  INFO 29876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 10:15:26.672  INFO 29876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 10:15:27.134  WARN 29876 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.RolePermission.
+2019-10-11 10:15:27.320  WARN 29876 --- [main] c.b.m.core.toolkit.TableInfoHelper       : Warn: Could not find @TableId in Class: com.lena.entity.UserRole.
+2019-10-11 10:15:28.026  INFO 29876 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/xadmin/**'], []
+2019-10-11 10:15:28.026  INFO 29876 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/treetable-lay/**'], []
+2019-10-11 10:15:28.026  INFO 29876 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/dtree/**'], []
+2019-10-11 10:15:28.026  INFO 29876 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/myjs/**'], []
+2019-10-11 10:15:28.096  INFO 29876 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@146dcfe6, org.springframework.security.web.context.SecurityContextPersistenceFilter@64984b0f, org.springframework.security.web.header.HeaderWriterFilter@73c9e8e8, org.springframework.security.web.authentication.logout.LogoutFilter@35d5ac51, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e1d03d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53ec2968, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61cd1c71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22587507, org.springframework.security.web.session.SessionManagementFilter@1deceb67, org.springframework.security.web.access.ExceptionTranslationFilter@59f93db8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3374b5bc]
+2019-10-11 10:15:28.294  INFO 29876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-11 10:15:28.478  INFO 29876 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-11 10:15:28.943  INFO 29876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-11 10:15:28.950  INFO 29876 --- [main] com.lena.Securitydemo930Application      : Started Securitydemo930Application in 8.105 seconds (JVM running for 10.402)
+2019-10-11 10:16:02.711  INFO 29876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 10:16:02.712  INFO 29876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-11 10:16:02.725  INFO 29876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-10-11 10:16:09.466 DEBUG 29876 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==>  Preparing: SELECT id,username,password,phone,dept,email,headimage,gangweimingcheng,status,createtime,updatetime,birthday,sex FROM sys_users WHERE username = ? 
+2019-10-11 10:16:09.493 DEBUG 29876 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : ==> Parameters: admin(String)
+2019-10-11 10:16:09.518 DEBUG 29876 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.selectList      : <==      Total: 1
+2019-10-11 10:16:09.533 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 10:16:09.533 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 10:16:09.541 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 10:16:09.671  INFO 29876 --- [http-nio-8080-exec-4] c.l.s.a.MyAuthenticationSuccessHandler   : 登录成功
+2019-10-11 10:16:10.700 DEBUG 29876 --- [http-nio-8080-exec-7] c.l.dao.PermissionMapper.listByUserId    : ==>  Preparing: select distinct sp.* from sys_user_role sru inner join sys_role_permission srp on srp.roleid=sru.roleid left join sys_permission sp on srp.permissionid = sp.id where sru.userid=? 
+2019-10-11 10:16:10.701 DEBUG 29876 --- [http-nio-8080-exec-7] c.l.dao.PermissionMapper.listByUserId    : ==> Parameters: 1(Integer)
+2019-10-11 10:16:10.717 DEBUG 29876 --- [http-nio-8080-exec-7] c.l.dao.PermissionMapper.listByUserId    : <==      Total: 23
+2019-10-11 10:16:11.008 DEBUG 29876 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 10:16:11.008 DEBUG 29876 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 10:16:11.011 DEBUG 29876 --- [http-nio-8080-exec-1] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 10:16:11.014 DEBUG 29876 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 10:16:11.015 DEBUG 29876 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 10:16:11.023 DEBUG 29876 --- [http-nio-8080-exec-1] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10
+2019-10-11 10:16:11.031 DEBUG 29876 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectCount  : ==>  Preparing: SELECT COUNT( 1 ) FROM sys_permission 
+2019-10-11 10:16:11.032 DEBUG 29876 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectCount  : ==> Parameters: 
+2019-10-11 10:16:11.034 DEBUG 29876 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectCount  : <==      Total: 1
+2019-10-11 10:16:11.039 DEBUG 29876 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : ==>  Preparing: SELECT id,parentid,name,css,href,type,permission,sort FROM sys_permission 
+2019-10-11 10:16:11.040 DEBUG 29876 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : ==> Parameters: 
+2019-10-11 10:16:11.041 DEBUG 29876 --- [http-nio-8080-exec-2] com.lena.dao.RoleMapper.countAllRoles    : ==>  Preparing: select count(*) from sys_role t 
+2019-10-11 10:16:11.042 DEBUG 29876 --- [http-nio-8080-exec-2] com.lena.dao.RoleMapper.countAllRoles    : ==> Parameters: 
+2019-10-11 10:16:11.043 DEBUG 29876 --- [http-nio-8080-exec-2] com.lena.dao.RoleMapper.countAllRoles    : <==      Total: 1
+2019-10-11 10:16:11.050 DEBUG 29876 --- [http-nio-8080-exec-2] c.lena.dao.RoleMapper.getallRolesByPage  : ==>  Preparing: select * from sys_role t order by t.id limit ?,? 
+2019-10-11 10:16:11.050 DEBUG 29876 --- [http-nio-8080-exec-2] c.lena.dao.RoleMapper.getallRolesByPage  : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 10:16:11.051 DEBUG 29876 --- [http-nio-8080-exec-3] c.lena.dao.PermissionMapper.selectList   : <==      Total: 26
+2019-10-11 10:16:11.054 DEBUG 29876 --- [http-nio-8080-exec-2] c.lena.dao.RoleMapper.getallRolesByPage  : <==      Total: 10
+2019-10-11 10:16:11.088 DEBUG 29876 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.countAllUsers   : ==>  Preparing: select count(*) from sys_users t 
+2019-10-11 10:16:11.088 DEBUG 29876 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.countAllUsers   : ==> Parameters: 
+2019-10-11 10:16:11.090 DEBUG 29876 --- [http-nio-8080-exec-4] com.lena.dao.UsersMapper.countAllUsers   : <==      Total: 1
+2019-10-11 10:16:11.091 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : ==>  Preparing: select * from sys_users t order by t.id limit ?,? 
+2019-10-11 10:16:11.091 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : ==> Parameters: 0(Integer), 10(Integer)
+2019-10-11 10:16:11.099 DEBUG 29876 --- [http-nio-8080-exec-4] c.l.dao.UsersMapper.getallUsersByPage    : <==      Total: 10

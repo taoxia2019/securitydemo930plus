@@ -11,6 +11,7 @@ import com.lena.service.UsersService;
 import com.lena.utils.MD5;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -56,6 +57,7 @@ public class UsersController {
     }
 
     @GetMapping("/add")
+    @PreAuthorize("hasAuthority('sys:user:add')")
     public String addUser(Model model){
         model.addAttribute(new Users());
         return "user/user-add";
@@ -63,6 +65,7 @@ public class UsersController {
 
     @PostMapping("/add")
     @ResponseBody
+    @PreAuthorize("hasAuthority('sys:user:add')")
     public Results<Users> saveUser(UsersDTO usersDTO,Integer roleid){
         Users user=null;
         user=usersService.getUserByPhone(usersDTO.getPhone());
