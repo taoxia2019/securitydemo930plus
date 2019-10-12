@@ -161,8 +161,8 @@ function getAllRole(callback) {
                         '<div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>' + result.datas[i].name + '</div></div>'
                 }
                 $(".show-role-container").html(html);
+
                 getCurrentUserRole(callback);
-                //callback();
             }
         }
     });
@@ -181,20 +181,23 @@ function getCurrentUserRole(callback) {
             success: function (result) {
 
                 if(result.code==200){
-
                     if(result.data){
                         $("[name=roleid]").each(function () {
                             if($(this).val()==result.data.roleid){
-
                                 $(this).attr("checked","checked");
                                 return false;
                             }
-
                         })
                     }
                     if(callback){
                         callback();
                     }
+                }else {
+                    //如未分配角色返回500
+                    if(callback){
+                        callback();
+                    }
+
                 }
             }
         });
